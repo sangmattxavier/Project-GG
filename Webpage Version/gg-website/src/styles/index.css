@@ -30,4 +30,7 @@ hr {
   width: 100%;
   background-color: #332f31;
   margin: 0;
+  border-bottom: #3d393b;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
 }
