@@ -7,9 +7,15 @@ class LoginScreen extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="LoginScreen">
         <LogoWhite />
         <img src={require("./Assets/BoyBand.png")} className="boyBandImage" />
+        <div>
+          <img
+            src={require("./Assets/Controller.png")}
+            className="controllerImage"
+          />
+        </div>
       </div>
     )
   }
