@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-class Logo extends Component {
+class LogoWhite extends Component {
   constructor() {
     super()
     this.state = {}
@@ -8,9 +8,11 @@ class Logo extends Component {
   render() {
     return (
       <label>
-        <p className="logoText">GG</p>
+        <p className="logoText" style={{ color: "#FFF" }}>
+          GG
+        </p>
       </label>
     )
   }
 }
-export default Logo
+export default LogoWhite
