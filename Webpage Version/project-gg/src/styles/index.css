@@ -1,5 +1,14 @@
 body {
   margin: 0;
+  margin: auto;
+}
+html {
+  background: red; /* fallback color */
+  background: linear-gradient(to right, #ea6341, #2c265a);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 .searchbar {
   padding-left: 16px;
