@@ -1,10 +1,11 @@
 import React, { Component } from "react"
-import "./styles/index.css"
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import "./styles/component.css"
+import { Switch, Route } from "react-router-dom";
 
 //import Navbar from "./Navbar"
-import SignupScreen from "./screens/SignupScreen"
-import HomeScreen from "./screens/HomeScreen";
+import Signup from "./pages/Signup"
+import Landing from "./pages/Landing";
+import Login from "./pages/Login";
 
 class App extends Component {
   constructor() {
@@ -14,10 +15,11 @@ class App extends Component {
   render() {
     return (
       <div className="gradientBackground">
-        <Router>
-          <Route path='/' component={SignupScreen}></Route>
-          <Route path='/home' component={HomeScreen}></Route>
-        </Router>
+        <Switch>
+          <Route exact path='/' component={Signup}></Route>
+          <Route path='/home' component={Landing}></Route>
+          <Route path='/login' component={Login}></Route>
+        </Switch>
       </div>
     )
   }
