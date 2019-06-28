@@ -47,6 +47,7 @@ html {
   margin-left: 16px;
   line-height: 60px;
   position: absolute;
+  z-index: 0;
 
   border-style: solid;
   border-width: 2px;
