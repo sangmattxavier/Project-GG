@@ -1,22 +1,22 @@
 import React, {Component} from 'react';
 import Logo from '../components/Logo';
 
-class HomeScreen extends Component {
+class Login extends Component {
     constructor() {
         super();
         this.state = {};
     }
     render() {
         return (
-            <div className="homePage">
+            <div>
                 <div>
                     <Logo color={"white"}/>
                 </div>
                 <div className="content">
-                    TEST
+                    Login!
                 </div>
             </div>
         );
     }
 }
-export default HomeScreen;
+export default Login;

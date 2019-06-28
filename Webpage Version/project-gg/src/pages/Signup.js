@@ -4,7 +4,7 @@ import BackButton from "../components/BackButton"
 import CreateAccountObject from "../components/CreateAccountObject"
 import {Link} from "react-router-dom";
 
-class SignupScreen extends Component {
+class Signup extends Component {
   constructor() {
     super()
     this.state = {}
@@ -19,14 +19,14 @@ class SignupScreen extends Component {
           <div className="createBotLayerLeftSide">
             <div className="createBotLayerLeftTopSide">
               <img
-                src={require("./Assets/BoyBand.png")}
+                src={require("../Assets/BoyBand.png")}
                 className="boyBandImage"
               />
               <Link to="/home"><BackButton /></Link>
             </div>
             <div className="createBotLayerRightTopSide">
               <img
-                src={require("./Assets/Controller.png")}
+                src={require("../Assets/Controller.png")}
                 className="controllerImage"
               />
             </div>
@@ -39,4 +39,4 @@ class SignupScreen extends Component {
     )
   }
 }
-export default SignupScreen
+export default Signup
