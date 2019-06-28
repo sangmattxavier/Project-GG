@@ -10,7 +10,7 @@ class LandingPage extends Component {
         return (
             <div className="landPage">
                 <div>
-                    <Logo color={white}/>
+                    <Logo color={"white"}/>
                 </div>
                 <div className="content">
                     <img />
