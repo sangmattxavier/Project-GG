@@ -10,27 +10,27 @@ class CreateAccountScreen extends Component {
   }
   render() {
     return (
-      <div className="createAccountWindow">
-        <div>
+      <div className="createAccountScreen">
+        <div className="createTopLayer">
           <Logo color={"white"} />
         </div>
-        <div>
-          <div>
-            <div>
+        <div className="createBotLayer">
+          <div className="createBotLayerLeftSide">
+            <div className="createBotLayerLeftTopSide">
               <img
                 src={require("./Assets/BoyBand.png")}
                 className="boyBandImage"
               />
               <BackButton />
             </div>
-            <div>
+            <div className="createBotLayerRightTopSide">
               <img
                 src={require("./Assets/Controller.png")}
                 className="controllerImage"
               />
             </div>
           </div>
-          <div>
+          <div className="createBotLayerRightSide">
             <CreateAccountObject />
           </div>
         </div>
