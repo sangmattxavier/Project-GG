@@ -3,14 +3,14 @@ import Logo from "./Logo"
 import BackButton from "./BackButton"
 import CreateAccountObject from "./CreateAccountObject"
 
-class LoginScreen extends Component {
+class CreateAccountScreen extends Component {
   constructor() {
     super()
     this.state = {}
   }
   render() {
     return (
-      <div className="LoginScreen">
+      <div className="createAccountWindow">
         <div>
           <Logo color={"white"} />
         </div>
@@ -38,4 +38,4 @@ class LoginScreen extends Component {
     )
   }
 }
-export default LoginScreen
+export default CreateAccountScreen

@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import "./styles/index.css"
 
 //import Navbar from "./Navbar"
-import LoginScreen from "./LoginScreen"
+import CreateAccountScreen from "./CreateAccountScreen"
 
 class App extends Component {
   constructor() {
@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div className="gradientBackground">
-        <LoginScreen />
+        <CreateAccountScreen />
       </div>
     )
   }
