@@ -8,7 +8,7 @@ class CreateAccountObject extends Component {
   render() {
     return (
       <div>
-        <form className="createAccountWindow">
+        <form className="createAccountObject">
           <p>Create Account</p>
           <input type="text" placeholder="Email" />
           <p>Password Requirements</p>
