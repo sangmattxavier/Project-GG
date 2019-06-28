@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import LogoWhite from "./LogoWhite"
+import Logo from "./Logo"
+
 class LoginScreen extends Component {
   constructor() {
     super()
@@ -8,7 +9,7 @@ class LoginScreen extends Component {
   render() {
     return (
       <div className="LoginScreen">
-        <LogoWhite />
+        <Logo color={"white"} />
         <img src={require("./Assets/BoyBand.png")} className="boyBandImage" />
         <div>
           <img
