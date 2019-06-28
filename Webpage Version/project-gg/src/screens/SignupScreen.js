@@ -1,7 +1,8 @@
 import React, { Component } from "react"
-import Logo from "./Logo"
-import BackButton from "./BackButton"
-import CreateAccountObject from "./CreateAccountObject"
+import Logo from "../components/Logo"
+import BackButton from "../components/BackButton"
+import CreateAccountObject from "../components/CreateAccountObject"
+import {Link} from "react-router-dom";
 
 class CreateAccountScreen extends Component {
   constructor() {
@@ -21,7 +22,7 @@ class CreateAccountScreen extends Component {
                 src={require("./Assets/BoyBand.png")}
                 className="boyBandImage"
               />
-              <BackButton />
+              <Link to="/home"><BackButton /></Link>
             </div>
             <div className="createBotLayerRightTopSide">
               <img

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Logo from './Logo';
+import Logo from '../components/Logo';
 
 class LandingPage extends Component {
     constructor() {
@@ -13,7 +13,7 @@ class LandingPage extends Component {
                     <Logo color={"white"}/>
                 </div>
                 <div className="content">
-                    <img />
+                    TEST
                 </div>
             </div>
         );
