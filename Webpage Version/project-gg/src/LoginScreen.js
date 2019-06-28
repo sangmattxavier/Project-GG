@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Logo from "./Logo"
+import BackButton from "./BackButton"
 
 class LoginScreen extends Component {
   constructor() {
@@ -9,9 +10,12 @@ class LoginScreen extends Component {
   render() {
     return (
       <div className="LoginScreen">
-        <Logo color={"white"} />
-        <img src={require("./Assets/BoyBand.png")} className="boyBandImage" />
         <div>
+          <Logo color={"white"} />
+        </div>
+        <div>
+          <img src={require("./Assets/BoyBand.png")} className="boyBandImage" />
+          <BackButton />
           <img
             src={require("./Assets/Controller.png")}
             className="controllerImage"
