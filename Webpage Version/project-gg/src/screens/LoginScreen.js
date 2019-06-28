@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import Logo from '../components/Logo';
 
-class HomeScreen extends Component {
+class LoginScreen extends Component {
     constructor() {
         super();
         this.state = {};
     }
     render() {
         return (
-            <div className="homePage">
+            <div>
                 <div>
                     <Logo color={"white"}/>
                 </div>
@@ -19,4 +19,4 @@ class HomeScreen extends Component {
         );
     }
 }
-export default HomeScreen;
+export default LoginScreen;

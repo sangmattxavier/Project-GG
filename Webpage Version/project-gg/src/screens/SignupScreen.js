@@ -4,7 +4,7 @@ import BackButton from "../components/BackButton"
 import CreateAccountObject from "../components/CreateAccountObject"
 import {Link} from "react-router-dom";
 
-class CreateAccountScreen extends Component {
+class SignupScreen extends Component {
   constructor() {
     super()
     this.state = {}
@@ -39,4 +39,4 @@ class CreateAccountScreen extends Component {
     )
   }
 }
-export default CreateAccountScreen
+export default SignupScreen
