@@ -59,6 +59,7 @@
   text-align: left;
   align-self: center;
   margin-bottom: 16px;
+  font-family: inherit;
 
   border: none;
   border-bottom: solid;
