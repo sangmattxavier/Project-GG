@@ -1,3 +1,6 @@
+body {
+  overflow-y: hidden;
+}
 .boyBandImage {
   margin-top: 0%;
   margin-left: 8%;
@@ -11,7 +14,7 @@
   margin-bottom: 0%;
   margin-left: 0%;
   height: 55%;
-  width: 55%;
+  width: 60%;
 
   border-style: solid;
   border-width: 2px;
@@ -22,44 +25,51 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-style: solid;
+  border-width: 2px;
 }
 .AccountWindow {
-  padding: 8px;
-  width: 400px;
-  height: 90%;
-  align-self: flex-end;
+  width: 23%;
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+
   background-color: white;
   border-radius: 45px;
-
-  margin-left: 65%;
+  overflow: hidden;
 }
 .AccountTitle {
   font-family: "Bungee", cursive;
   font-size: 40px;
   text-align: center;
-  margin: auto;
-  margin-top: 28px;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
+
+  /* border-style: solid;
+  border-width: 2px; */
 }
 .AccountSubtitle {
   text-align: center;
   font-size: 25px;
-  margin-bottom: 0px;
-  margin: auto;
+  margin: 10, 0, 0, 0;
 }
 .AccountWindow li {
   font-size: 20px;
   list-style: none;
   text-align: left;
-  margin: auto;
+  margin-top: 8px;
 }
 .AccountWindow input[type="text"] {
   font-size: 35px;
-  width: 80%;
+  width: 90%;
   text-align: left;
   align-self: center;
-  margin-bottom: 16px;
+  margin-top: 18px;
   font-family: inherit;
+  padding: 5px;
 
   border: none;
   border-bottom: solid;
@@ -70,15 +80,49 @@
   /* border-style: solid;
   border-width: 2px; */
 }
-.AccountFormSection {
-  margin-top: 16px;
-  margin-bottom: 16px;
+.AccountNote {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 26px;
+  margin-bottom: 26px;
+
+  font-size: 24px;
+  /* 
+  border-style: solid;
+  border-width: 2px; */
+}
+.AccountNoteRight {
+  color: #1d7ce8;
+  margin: 0;
+  text-align: center;
   margin: auto;
+  margin-left: 3px;
+
+  /* border-style: solid;
+  border-width: 2px; */
+}
+.AccountNoteLeft {
+  color: #666666;
+  margin: 0;
+  text-align: center;
+  margin: auto;
+  margin-right: 0;
+
+  /* border-style: solid;
+  border-width: 2px; */
+}
+.AccountFormSection {
   align-items: center;
   width: 90%;
-  height: 90%;
+
   align-self: center;
   text-align: center;
+  margin-bottom: 18px;
+  margin-top: 8px;
 
   /* border-style: solid;
   border-width: 2px; */

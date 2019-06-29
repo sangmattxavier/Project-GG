@@ -4,6 +4,9 @@ body {
   font-family: Bahnschrift;
   height: 100%;
   width: 100%;
+
+  /* border-style: solid;
+  border-width: 2px; */
 }
 html {
   background: #707070; /* fallback color */
@@ -17,7 +20,6 @@ html {
 }
 .searchbar {
   padding-left: 16px;
-
   outline: none;
   width: 800px;
   height: 60px;
@@ -67,27 +69,33 @@ hr {
   border-bottom-style: solid;
 }
 .AccountSubmitButton {
-  width: 280px;
-  height: 60px;
-  font-size: 40px;
-  margin: auto;
+  width: 240px;
+  height: 50px;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0;
+
   font-family: inherit;
   border-radius: 55px;
   background: linear-gradient(to right, #ea6341, #2c265a);
   color: white;
+  outline: none;
+
+  /* border-style: solid;
+  border-width: 2px; */
 }
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #707070;
+  color: #adacac;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #707070;
+  color: #adacac;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #707070;
+  color: #adacac;
 }
