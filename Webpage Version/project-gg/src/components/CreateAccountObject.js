@@ -15,13 +15,14 @@ class CreateAccountObject extends Component {
           </div>
           <div className="AccountFormSection">
             <input type="text" placeholder="Email" />
-            <p className="AccountSubtitle">Password Requirements</p>
-            <ul>
-              <li>- At least 8 characters</li>
-              <li>- At least 1 number</li>
-              <li>- At least 1 special character</li>
-              <li>- No spaces</li>
-            </ul>
+            <div className="AccountRequirements">
+              <p>Password Requirements</p>
+
+              <p>- At least 8 characters</p>
+              <p>- At least 1 number</p>
+              <p>- At least 1 special character</p>
+              <p>- No spaces</p>
+            </div>
             <input type="text" placeholder="Password" />
             <input type="text" placeholder="Confirm Password" />
           </div>
