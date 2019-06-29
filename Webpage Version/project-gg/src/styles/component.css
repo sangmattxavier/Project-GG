@@ -70,13 +70,7 @@ hr {
   width: 280px;
   height: 60px;
   font-size: 40px;
-  text-align: center;
-  align-self: center;
-  outline: none;
-  margin-top: 16px;
-  margin-bottom: 24px;
   margin: auto;
-
   font-family: inherit;
   border-radius: 55px;
   background: linear-gradient(to right, #ea6341, #2c265a);
