@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Logo from "../components/Logo";
 import ControlButton from "../components/ControlButton";
+import { Link } from "react-router-dom";
 import "../styles/landing.css";
 
 class Landing extends Component {
@@ -20,9 +21,9 @@ class Landing extends Component {
           </div>
         </div>
         <div className="content">
-          <ControlButton label="Register" id="register"/>
+          <Link to="/register"><ControlButton label="Register" id="register"/></Link>
           <img src={require("../Assets/ControllerUncut@2x.png")} id="controller"/>
-          <ControlButton label="Login" id="login"/>
+          <Link to="/login"><ControlButton label="Login" id="login"/></Link>
         </div>
       </div>
     )

@@ -17,8 +17,8 @@ class App extends Component {
     return (
       <div className="gradientBackground">
         <Switch>
-          <Route exact path="/" component={Signup} />
-          <Route path="/home" component={Landing} />
+          <Route exact path="/" component={Landing} />
+          <Route path="/register" component={Signup} />
           <Route path="/login" component={Login} />
         </Switch>
       </div>
