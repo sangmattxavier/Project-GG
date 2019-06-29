@@ -1,10 +1,10 @@
-import React, { Component } from "react"
-import Logo from "../components/Logo"
+import React, { Component } from "react";
+import Logo from "../components/Logo";
 
 class Landing extends Component {
   constructor() {
-    super()
-    this.state = {}
+    super();
+    this.state = {};
   }
   render() {
     return (
@@ -17,4 +17,4 @@ class Landing extends Component {
     )
   }
 }
-export default Landing
+export default Landing;
