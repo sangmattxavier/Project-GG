@@ -1,9 +1,12 @@
 import React, { Component } from "react"
+import CreateAccountObject from "../components/CreateAccountObject"
+import { Link } from "react-router-dom"
+
 import Logo from "../components/Logo"
 import BackButton from "../components/BackButton"
-import CreateAccountObject from "../components/CreateAccountObject"
-import {Link} from "react-router-dom";
 
+import "../styles/loginAndSignup.css"
+//<Logo color={"white"} />
 class Signup extends Component {
   constructor() {
     super()
@@ -11,31 +14,19 @@ class Signup extends Component {
   }
   render() {
     return (
-      <div className="createAccountScreen">
-        <div className="createTopLayer">
-          <Logo color={"white"} />
-        </div>
-        <div className="createBotLayer">
-          <div className="createBotLayerLeftSide">
-            <div className="createBotLayerLeftTopSide">
-              <img
-                src={require("../Assets/BoyBand.png")}
-                className="boyBandImage"
-              />
-              <Link to="/home"><BackButton /></Link>
-            </div>
-            <div className="createBotLayerRightTopSide">
-              <img
-                src={require("../Assets/Controller.png")}
-                className="controllerImage"
-              />
-            </div>
-          </div>
-          <div className="createBotLayerRightSide">
-            <CreateAccountObject />
-          </div>
-        </div>
-      </div>
+      <React.Fragment>
+        <img src={require("../Assets/BoyBand.png")} className="boyBandImage" />
+        <Link to="/home">
+          <BackButton />
+        </Link>
+
+        <img
+          src={require("../Assets/Controller.png")}
+          className="controllerImage"
+        />
+
+        <CreateAccountObject />
+      </React.Fragment>
     )
   }
 }

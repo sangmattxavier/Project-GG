@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 html {
-  background: red; /* fallback color */
+  background: #707070; /* fallback color */
   background: linear-gradient(to right, #ea6341, #2c265a);
   background-repeat: repeat-y;
   background-size: cover;
@@ -52,31 +52,6 @@ html {
   border-style: solid;
   border-width: 2px;
 }
-.createAccountScreen {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-.createTopLayer {
-}
-.boyBandImage {
-  margin-top: 0%;
-  margin-left: 8%;
-  height: 30%;
-  width: 30%;
-
-  border-style: solid;
-  border-width: 2px;
-}
-.controllerImage {
-  margin-bottom: 0%;
-  margin-left: 0%;
-  height: 55%;
-  width: 55%;
-
-  border-style: solid;
-  border-width: 2px;
-}
 hr {
   border-width: 2px;
   border-color: #3d393b;
@@ -90,4 +65,31 @@ hr {
   border-bottom: #3d393b;
   border-bottom-width: 2px;
   border-bottom-style: solid;
+}
+.AccountSubmitButton {
+  width: 280px;
+  height: 60px;
+  font-size: 40px;
+  text-align: center;
+  align-self: center;
+  margin-top: 16px;
+
+  border-radius: 55px;
+  background: linear-gradient(to right, #ea6341, #2c265a);
+  color: white;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #707070;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #707070;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #707070;
 }
