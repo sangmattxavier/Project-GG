@@ -10,7 +10,9 @@ class CreateAccountObject extends Component {
     return (
       <div>
         <form className="AccountWindow">
-          <p className="AccountTitle">Create Account</p>
+          <div>
+            <p className="AccountTitle">Register</p>
+          </div>
           <div className="AccountFormSection">
             <input type="text" placeholder="Email" />
             <p className="AccountSubtitle">Password Requirements</p>
@@ -23,7 +25,13 @@ class CreateAccountObject extends Component {
             <input type="text" placeholder="Password" />
             <input type="text" placeholder="Confirm Password" />
           </div>
-          <AccountSubmitButton label="Create" />
+          <div>
+            <AccountSubmitButton label="Create" />
+          </div>
+          <div className="AccountNote">
+            <p className="AccountNoteLeft">Existing User?</p>
+            <p className="AccountNoteRight">Sign in!</p>
+          </div>
         </form>
       </div>
     )
