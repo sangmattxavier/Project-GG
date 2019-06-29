@@ -7,6 +7,10 @@ import BackButton from "../components/BackButton"
 
 import "../styles/loginAndSignup.css"
 //<Logo color={"white"} />
+//<img src={require("../Assets/BoyBand.png")} className="boyBandImage" />
+//<img src={require("../Assets/Controller.png")} className="controllerImage" />
+//    <Link to="/home"> <BackButton /> </Link>
+
 class Signup extends Component {
   constructor() {
     super()
@@ -14,19 +18,12 @@ class Signup extends Component {
   }
   render() {
     return (
-      <React.Fragment>
-        <img src={require("../Assets/BoyBand.png")} className="boyBandImage" />
-        <Link to="/home">
-          <BackButton />
-        </Link>
-
-        <img
-          src={require("../Assets/Controller.png")}
-          className="controllerImage"
-        />
-
-        <CreateAccountObject />
-      </React.Fragment>
+      <div>
+        <Logo color={"white"} />
+        <div className="container">
+          <CreateAccountObject />
+        </div>
+      </div>
     )
   }
 }
