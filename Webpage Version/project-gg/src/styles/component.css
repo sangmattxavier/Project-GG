@@ -75,6 +75,7 @@ hr {
   margin-top: 16px;
 
   border-radius: 55px;
+  border-style: solid;
   background: linear-gradient(to right, #ea6341, #2c265a);
   color: white;
 }
