@@ -20,9 +20,8 @@ class Signup extends Component {
     return (
       <React.Fragment>
         <Logo color={"white"} />
-        <div className="container">
-          <CreateAccountObject />
-        </div>
+
+        <CreateAccountObject />
       </React.Fragment>
     )
   }
