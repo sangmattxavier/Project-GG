@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import Logo from "../components/Logo";
-import ControlButton from "../components/ControlButton";
-import { Link } from "react-router-dom";
-import "../styles/landing.css";
+import React, { Component } from "react"
+import Logo from "../components/Logo"
+import ControlButton from "../components/ControlButton"
+import { Link } from "react-router-dom"
+import "../styles/landing.css"
 
 class Landing extends Component {
   constructor() {
-    super();
-    this.state = {};
+    super()
+    this.state = {}
   }
   render() {
     return (
@@ -21,12 +21,19 @@ class Landing extends Component {
           </div>
         </div>
         <div className="content">
-          <Link to="/register"><ControlButton label="Register" id="register"/></Link>
-          <img src={require("../Assets/ControllerUncut@2x.png")} id="controller"/>
-          <Link to="/login"><ControlButton label="Login" id="login"/></Link>
+          <Link to="/register">
+            <ControlButton label="Register" id="register" />
+          </Link>
+          <img
+            src={require("../Assets/ControllerUncut@2x.png")}
+            id="controller"
+          />
+          <Link to="/login">
+            <ControlButton label="Login" id="login" />
+          </Link>
         </div>
       </div>
     )
   }
 }
-export default Landing;
+export default Landing
