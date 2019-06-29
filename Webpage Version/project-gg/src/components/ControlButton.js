@@ -6,7 +6,7 @@ class ControlButton extends Component {
     this.state = {};
   }
   render() {
-    return <button className="ControlButton">{this.props.label}</button>
+    return <button className="ControlButton" id={this.props.id}>{this.props.label}</button>
   }
 }
 export default ControlButton;
