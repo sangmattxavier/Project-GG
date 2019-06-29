@@ -1,0 +1,43 @@
+.container {
+  height: 100%;
+  width: 100%;
+}
+.controllerImage {
+  margin-bottom: 0%;
+  margin-left: 0%;
+  height: 55%;
+  width: 55%;
+
+  border-style: solid;
+  border-width: 2px;
+}
+.LoginWindow {
+  margin-left: 65%;
+  text-align: center;
+  padding: 14px;
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 65px;
+}
+.LoginTitle {
+  font-family: "Bungee", cursive;
+  font-size: 40px;
+
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.LoginWindow input[type="text"] {
+  font-size: 35px;
+  width: 80%;
+  text-align: left;
+  align-self: center;
+  margin-bottom: 35px;
+
+  border: none;
+  border-bottom: solid;
+  border-color: #707070;
+  border-width: 1px;
+}
