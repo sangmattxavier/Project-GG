@@ -10,6 +10,8 @@ import "../styles/loginAndSignup.css"
 //<img src={require("../Assets/BoyBand.png")} className="boyBandImage" />
 //<img src={require("../Assets/Controller.png")} className="controllerImage" />
 //    <Link to="/home"> <BackButton /> </Link>
+const width = window.innerWidth
+const height = window.innerHeight
 
 class Signup extends Component {
   constructor() {
@@ -18,11 +20,33 @@ class Signup extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <div className="superContainer" style={{ width: width, height: height }}>
         <Logo color={"white"} />
 
-        <CreateAccountObject />
-      </React.Fragment>
+        <div className="container">
+          <div className="leftUI">
+            <div className="topUI">
+              <img
+                src={require("../Assets/BoyBand.png")}
+                className="boyBandImage"
+              />
+              <Link to="/">
+                {" "}
+                <BackButton />{" "}
+              </Link>
+            </div>
+            <div className="botUI">
+              <img
+                src={require("../Assets/Controller.png")}
+                className="controllerImage"
+              />
+            </div>
+          </div>
+          <div className="rightUI">
+            <CreateAccountObject />
+          </div>
+        </div>
+      </div>
     )
   }
 }

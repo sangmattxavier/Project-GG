@@ -1,4 +1,4 @@
-body{
+body {
   overflow-y: hidden;
 }
 .container {
@@ -10,9 +10,9 @@ body{
   margin-left: 0%;
   height: 55%;
   width: 55%;
-
+  /* 
   border-style: solid;
-  border-width: 2px;
+  border-width: 2px; */
 }
 .LoginWindow {
   margin-left: 65%;

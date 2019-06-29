@@ -31,6 +31,7 @@
   background-color: transparent;
   border: 3px solid #c5d0ca;
   top: 14.75rem;
+  outline: none;
 }
 #controller {
   width: 900px;
