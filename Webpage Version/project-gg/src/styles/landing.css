@@ -30,18 +30,19 @@
     color: white;
     background-color:  transparent;
     border: 3px solid #C5D0CA;
-    top: 14.75rem;
+    bottom: 668px;
 }
 #controller {
     width: 900px;
     height: 670.316702081px;
     position: absolute;
-    right: 30rem;
+    left: 50%;
+    margin-left: -430px;
     bottom: 0rem;
 }
 #register {
-    left: 35rem;
+    left: 38rem;
 }
 #login {
-    right: 35rem;
+    right: 38rem;
 }
