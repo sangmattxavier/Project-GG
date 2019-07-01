@@ -1,76 +1,117 @@
 body {
   overflow-y: hidden;
 }
-.boyBandImage {
-  margin-top: 0%;
-  margin-left: 8%;
-  height: 30%;
-  width: 30%;
-
-  border-style: solid;
-  border-width: 2px;
-}
-.controllerImage {
-  margin-bottom: 0%;
-  margin-left: 0%;
-  height: 55%;
-  width: 60%;
-
-  border-style: solid;
-  border-width: 2px;
-}
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-style: solid;
-  border-width: 2px;
-}
-.AccountWindow {
-  width: 23%;
-
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: stretch;
-
-  background-color: white;
-  border-radius: 45px;
-  overflow: hidden;
-}
-.AccountTitle {
-  font-family: "Bungee", cursive;
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 0px;
+.superContainer {
+  overflow-y: hidden;
 
   /* border-style: solid;
   border-width: 2px; */
 }
-.AccountSubtitle {
-  text-align: center;
-  font-size: 25px;
-  margin: 10, 0, 0, 0;
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  /* border-style: solid;
+  border-width: 2px; */
 }
-.AccountWindow li {
-  font-size: 20px;
-  list-style: none;
+.leftUI {
+  width: 80%;
+
+  /* border-style: solid;
+  border-width: 2px; */
+}
+.controllerImage {
+  display: block;
+  min-width: 1105px;
+  min-height: 474px;
+  width: auto;
+  height: auto;
+  align-self: flex-end;
+  margin-top: 24px;
+
+  /* border-style: solid;
+  border-width: 2px; */
+}
+.topUI {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 100px;
+  justify-content: space-evenly;
+
+  /* border-style: solid;
+  border-width: 2px; */
+}
+.boyBandImage {
+  display: block;
+  min-width: 599px;
+  min-height: 359px;
+  width: auto;
+  height: auto;
+
+  /* border-style: solid;
+  border-width: 2px; */
+}
+.botUI {
+  display: flex;
+  align-content: flex-end;
+}
+.rightUI {
+  align-self: center;
+  margin-right: 80px;
+
+  /* border-style: solid;
+  border-width: 2px; */
+}
+.AccountWindow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  float: right;
+
+  background-color: white;
+  border-radius: 45px;
+}
+.AccountTitle {
+  text-align: center;
+  margin-bottom: 0px;
+
+  font-family: "Bungee", cursive;
+  font-size: 40px;
+
+  /* border-style: solid;
+  border-width: 2px; */
+}
+.AccountRequirements {
   text-align: left;
-  margin-top: 8px;
+  padding-left: 15px;
+  margin-top: 30px;
+
+  font-size: 25px;
+
+  /* border-style: solid;
+  border-width: 2px; */
+}
+.AccountRequirements p {
+  margin: 0px;
+  margin-bottom: 12px;
+
+  /* border-style: solid;
+  border-width: 2px; */
 }
 .AccountWindow input[type="text"] {
-  font-size: 35px;
   width: 90%;
   text-align: left;
   align-self: center;
   margin-top: 18px;
-  font-family: inherit;
   padding: 5px;
 
+  font-size: 35px;
+  font-family: inherit;
   border: none;
   border-bottom: solid;
   border-color: #707070;
@@ -88,41 +129,43 @@ body {
   align-items: center;
   width: 80%;
   margin-top: 26px;
-  margin-bottom: 26px;
+  margin-bottom: 34px;
 
   font-size: 24px;
+
   /* 
   border-style: solid;
   border-width: 2px; */
 }
 .AccountNoteRight {
-  color: #1d7ce8;
   margin: 0;
   text-align: center;
   margin: auto;
-  margin-left: 3px;
+  margin-left: 8px;
+
+  color: #1d7ce8;
 
   /* border-style: solid;
   border-width: 2px; */
 }
 .AccountNoteLeft {
-  color: #666666;
   margin: 0;
   text-align: center;
   margin: auto;
   margin-right: 0;
+
+  color: #666666;
 
   /* border-style: solid;
   border-width: 2px; */
 }
 .AccountFormSection {
   align-items: center;
-  width: 90%;
-
   align-self: center;
   text-align: center;
   margin-bottom: 18px;
   margin-top: 8px;
+  width: 90%;
 
   /* border-style: solid;
   border-width: 2px; */
