@@ -12,15 +12,15 @@ class Landing extends Component {
   render() {
     return (
       <div id="landingPage">
-        <div>
+        <div id="landHeader">
           <Logo color={"white"} />
-          <div id="landHead">
+          <div id="headLinks">
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
             <a href="#faq">FAQ</a>
           </div>
         </div>
-        <div className="content">
+        <div className="section">
           <Link to="/register">
             <ControlButton label="Register" id="register" />
           </Link>
@@ -31,6 +31,9 @@ class Landing extends Component {
           <Link to="/login">
             <ControlButton label="Login" id="login" />
           </Link>
+        </div>
+        <div className="section">
+          TEST
         </div>
       </div>
     )
