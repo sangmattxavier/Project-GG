@@ -1,0 +1,13 @@
+body {
+  background: none;
+  background-color: #332f31;
+}
+.HomeNavBar {
+  width: 100%;
+
+  font-size: 28px;
+  color: white;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #3d393b;
+}

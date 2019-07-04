@@ -32,9 +32,7 @@ class Landing extends Component {
             <ControlButton label="Login" id="login" />
           </Link>
         </div>
-        <div className="section">
-          TEST
-        </div>
+        <div className="section">TEST</div>
       </div>
     )
   }
