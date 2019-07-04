@@ -1,13 +1,74 @@
 body {
   background: none;
   background-color: #332f31;
+  color: white;
+}
+.HomeContainer {
+  border-color: #5e5e5e;
+  border-width: 2px;
+  border-style: solid;
 }
 .HomeNavBar {
   width: 100%;
 
   font-size: 28px;
-  color: white;
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #3d393b;
+}
+.HomeContent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+
+  border-color: #5e5e5e;
+  border-width: 2px;
+  border-style: solid;
+}
+.HomeEventsAndGroupsColumn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 15%;
+
+  border-color: #a5a5a5;
+  border-width: 2px;
+  border-style: solid;
+}
+.HomeEvents {
+  height: 370px;
+
+  border-color: #5e5e5e;
+  border-width: 2px;
+  border-style: solid;
+}
+.HomeGroups {
+  margin-top: 16px;
+  height: 370px;
+
+  border-color: #5e5e5e;
+  border-width: 2px;
+  border-style: solid;
+}
+.HomeMainContentColumn {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 50px;
+
+  border-color: #5e5e5e;
+  border-width: 2px;
+  border-style: solid;
+}
+.HomeFriendsColumn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 15%;
+  height: 370px;
+
+  border-color: #a5a5a5;
+  border-width: 2px;
+  border-style: solid;
 }
