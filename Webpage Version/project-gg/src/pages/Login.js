@@ -5,10 +5,8 @@ import { Link } from "react-router-dom"
 import Logo from "../components/Logo"
 import BackButton from "../components/BackButton"
 
-import "../styles/loginAndSignup.css"
-import '../styles/matt.css'
+import "../styles/matt.css"
 class Login extends Component {
-
   constructor() {
     super()
     this.state = {}
@@ -19,7 +17,7 @@ class Login extends Component {
         <div>
           <Logo color={"white"} />
         </div>
-        <div className = 'container'>
+        <div className="container">
           <form className="LoginWindow">
             <p className="LoginTitle">Login</p>
             <input type="text" placeholder="Email" />

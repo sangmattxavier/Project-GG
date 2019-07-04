@@ -121,39 +121,21 @@ body {
   /* border-style: solid;
   border-width: 2px; */
 }
-.AccountNote {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-content: center;
-  align-items: center;
+.AccountNoteSection {
   width: 80%;
   margin-top: 26px;
   margin-bottom: 34px;
-
   font-size: 24px;
 
   /* 
   border-style: solid;
   border-width: 2px; */
 }
-.AccountNoteRight {
+.AccountNote {
   margin: 0;
   text-align: center;
   margin: auto;
-  margin-left: 8px;
-
-  color: #1d7ce8;
-
-  /* border-style: solid;
-  border-width: 2px; */
-}
-.AccountNoteLeft {
-  margin: 0;
-  text-align: center;
-  margin: auto;
-  margin-right: 0;
-
+  font-size: 24px;
   color: #666666;
 
   /* border-style: solid;

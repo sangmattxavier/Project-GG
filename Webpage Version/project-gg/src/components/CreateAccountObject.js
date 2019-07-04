@@ -29,13 +29,15 @@ class CreateAccountObject extends Component {
         <div>
           <AccountSubmitButton label="Create" />
         </div>
-        <div className="AccountNote">
-          <p className="AccountNoteLeft">Existing User?</p>
-          <Link to="/login">
-            {""}
-            <p className="AccountNoteRight">Sign in!</p>
-            {""}
-          </Link>
+        <div className="AccountNoteSection">
+          <p className="AccountNote">
+            Existing User?
+            <Link to="/login">
+              {""}
+              {" Sign in!"}
+              {""}
+            </Link>
+          </p>
         </div>
       </form>
     )

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import Logo from "../components/Logo"
 import BackButton from "../components/BackButton"
 
-import "../styles/loginAndSignup.css"
+import "../styles/SignupPage.css"
 //<Logo color={"white"} />
 //<img src={require("../Assets/BoyBand.png")} className="boyBandImage" />
 //<img src={require("../Assets/Controller.png")} className="controllerImage" />
