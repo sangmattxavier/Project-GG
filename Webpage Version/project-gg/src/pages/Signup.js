@@ -21,7 +21,11 @@ class Signup extends Component {
   render() {
     return (
       <div className="superContainer" style={{ width: width, height: height }}>
-        <Logo color={"white"} />
+        <Link to="/">
+          {""}
+          <Logo color={"white"} />
+          {""}
+        </Link>
 
         <div className="container">
           <div className="leftUI">

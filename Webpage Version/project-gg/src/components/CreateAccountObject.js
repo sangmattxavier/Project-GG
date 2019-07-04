@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import AccountSubmitButton from "../components/AccountSubmitButton"
+import { Link } from "react-router-dom"
 
 class CreateAccountObject extends Component {
   constructor() {
@@ -30,7 +31,11 @@ class CreateAccountObject extends Component {
         </div>
         <div className="AccountNote">
           <p className="AccountNoteLeft">Existing User?</p>
-          <p className="AccountNoteRight">Sign in!</p>
+          <Link to="/login">
+            {""}
+            <p className="AccountNoteRight">Sign in!</p>
+            {""}
+          </Link>
         </div>
       </form>
     )
