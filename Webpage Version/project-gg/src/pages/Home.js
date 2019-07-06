@@ -26,24 +26,28 @@ class Home extends Component {
                 src={require("../Assets/icons/castle-90.png")}
                 className="HomeIconImage"
               />
+              <label>Home</label>
             </button>
             <button className="HomeNavButton">
               <img
                 src={require("../Assets/icons/activity-100.png")}
                 className="HomeIconImage"
               />
+              <label>Activity</label>
             </button>
             <button className="HomeNavButton">
               <img
                 src={require("../Assets/icons/mailbox-100.png")}
                 className="HomeIconImage"
               />
+              <label>Messages</label>
             </button>
             <button className="HomeNavButton">
               <img
                 src={require("../Assets/icons/settings-100.png")}
                 className="HomeIconImage"
               />
+              <label>Settings</label>
             </button>
 
             <button className="HomeNavButton">
@@ -52,7 +56,8 @@ class Home extends Component {
                 <img
                   src={require("../Assets/icons/logout-100.png")}
                   className="HomeIconImage"
-                />{" "}
+                />
+                <label>Logout</label>{" "}
               </Link>
             </button>
           </div>

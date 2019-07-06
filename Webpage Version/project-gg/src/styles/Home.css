@@ -68,6 +68,11 @@ body {
   border-width: 2px;
   border-style: solid; */
 }
+.HomeNavButtons label {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
 .HomeNavProfile {
   min-width: 70px;
   min-height: 70px;
