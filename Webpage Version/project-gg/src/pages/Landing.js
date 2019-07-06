@@ -20,21 +20,22 @@ class Landing extends Component {
             <a href="#faq">FAQ</a>
           </div>
         </div>
-        <div className="section">
+        <section className="window">
           <Link to="/register">
             <ControlButton label="Register" id="register" />
           </Link>
           <img
             src={require("../Assets/ControllerUncut@2x.png")}
             id="controller"
+            alt="Controller"
           />
           <Link to="/login">
             <ControlButton label="Login" id="login" />
           </Link>
-        </div>
-        <div className="section">
+        </section>
+        <section className="window">
           TEST
-        </div>
+        </section>
       </div>
     )
   }

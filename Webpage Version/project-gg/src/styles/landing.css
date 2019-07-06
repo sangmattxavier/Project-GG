@@ -6,7 +6,7 @@
 #headLinks {
     position: absolute;
     width: 25rem;
-    z-index: 50;
+    z-index: 99;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -26,9 +26,8 @@
     background-color: #37CD7B;
     transition: 0.3s;
 }
-.section {
+.window {
     height: 100%;
-    width: 100%;
 }
 .ControlButton {
     position: absolute;
@@ -46,6 +45,7 @@
 #controller {
     width: 900px;
     height: 670.316702081px;
+    z-index: 50;
     position: absolute;
     left: 50%;
     margin-left: -430px;
