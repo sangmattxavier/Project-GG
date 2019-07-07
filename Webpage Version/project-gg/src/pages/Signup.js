@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import Logo from "../components/Logo"
 import BackButton from "../components/BackButton"
 
-import "../styles/loginAndSignup.css"
+import "../styles/SignupPage.css"
 //<Logo color={"white"} />
 //<img src={require("../Assets/BoyBand.png")} className="boyBandImage" />
 //<img src={require("../Assets/Controller.png")} className="controllerImage" />
@@ -21,7 +21,11 @@ class Signup extends Component {
   render() {
     return (
       <div className="superContainer" style={{ width: width, height: height }}>
-        <Logo color={"white"} />
+        <Link className="link" to="/">
+          {""}
+          <Logo color={"white"} />
+          {""}
+        </Link>
 
         <div className="container">
           <div className="leftUI">
@@ -30,7 +34,7 @@ class Signup extends Component {
                 src={require("../Assets/BoyBand.png")}
                 className="boyBandImage"
               />
-              <Link to="/">
+              <Link className="link" to="/">
                 {" "}
                 <BackButton />{" "}
               </Link>

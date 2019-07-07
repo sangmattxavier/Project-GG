@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import AccountSubmitButton from "../components/AccountSubmitButton"
+import { Link } from "react-router-dom"
 
 class CreateAccountObject extends Component {
   constructor() {
@@ -26,11 +27,21 @@ class CreateAccountObject extends Component {
           <input type="text" placeholder="Confirm Password" />
         </div>
         <div>
-          <AccountSubmitButton label="Create" />
+          <Link className="link" to="/home">
+            {""}
+            <AccountSubmitButton label="Create" />
+            {""}
+          </Link>
         </div>
-        <div className="AccountNote">
-          <p className="AccountNoteLeft">Existing User?</p>
-          <p className="AccountNoteRight">Sign in!</p>
+        <div className="AccountNoteSection">
+          <p className="AccountNote">
+            Existing User?
+            <Link className="link" to="/login">
+              {""}
+              {" Sign in!"}
+              {""}
+            </Link>
+          </p>
         </div>
       </form>
     )
