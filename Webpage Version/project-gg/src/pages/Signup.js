@@ -20,7 +20,7 @@ class Signup extends Component {
   }
   render() {
     return (
-      <div className="superContainer" style={{ width: width, height: height }}>
+      <div className="superContainer">
         <Link className="link" to="/">
           {""}
           <Logo color={"white"} />
