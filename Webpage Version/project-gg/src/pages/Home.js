@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import "../styles/Home.css"
 
 import Navbar from "../components/Navbar"
+import LeftSideContent from "../components/LeftSideContent"
+import SpicyPost from "../components/SpicyPost"
 
 class Home extends Component {
   constructor() {
@@ -15,61 +17,12 @@ class Home extends Component {
 
         <div className="HomeContent">
           <div className="HomeEventsAndGroupsColumn">
-            <div className="HomeEvents">
-              <label className="eventsTitle">
-                <p>Events</p>
-                <img src={require("../Assets/icons/circus-100.png")} />
-              </label>
-              <ul className="eventsList">
-                <li>
-                  <label>Smash Tournament</label>
-                  <p>7.2.19</p>
-                </li>
-                <li>
-                  <label>CSGO Tournament</label>
-                  <p>7.2.19</p>
-                </li>
-                <li>
-                  <label>Smash Meetup</label>
-                  <p>7.2.19</p>
-                </li>
-              </ul>
-            </div>
-            <div className="HomeGroups">
-              <div className="HomeEvents">
-                <label className="eventsTitle">
-                  <p>Groups</p>
-                  <img src={require("../Assets/icons/groups-48.png")} />
-                </label>
-                <ul className="eventsList">
-                  <li>
-                    <label>NJ Smash Group</label>
-                    <p>Admin</p>
-                  </li>
-                  <li>
-                    <label>CSGO West Coast</label>
-                    <p>Member</p>
-                  </li>
-                  <li>
-                    <label>College Gamers</label>
-                    <p>Member</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <LeftSideContent />
+            <LeftSideContent />
           </div>
           <div className="HomeMainContentColumn">
             <div className="HomeSpicyPostSection">
-              <label className="spicyPostTitle">
-                <img
-                  src={require("../Assets/icons/fire-100.png")}
-                  className="SpicyPostIconImage"
-                />
-                <p>Spiciest Posts of the Day!</p>
-              </label>
-              <div className="spicyPostContent">
-                This is where we will put the spicy post content
-              </div>
+              <SpicyPost />
             </div>
             <div className="HomeSpicyPostSection">
               <label className="spicyPostTitle">
