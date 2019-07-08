@@ -22,17 +22,18 @@ class Signup extends Component {
 
         <div style={styles.container}>
           <div style={styles.leftUI}>
-            <div className="topUI">
+            <div style={styles.leftTopUI}>
               <img
                 src={require("../Assets/BoyBand.png")}
                 className="boyBandImage"
+                style={styles.boyBandImage}
               />
               <Link className="link" to="/">
                 {" "}
                 <BackButton />{" "}
               </Link>
             </div>
-            <div className="botUI">
+            <div style={styles.botUI}>
               <img
                 src={require("../Assets/Controller.png")}
                 className="controllerImage"
@@ -40,7 +41,7 @@ class Signup extends Component {
               />
             </div>
           </div>
-          <div className="rightUI">
+          <div style={styles.botRightUI}>
             <CreateAccountObject />
           </div>
         </div>
@@ -59,24 +60,46 @@ var styles = {
 
     // border: "2px solid #666666"
   },
-  leftUI: {
-    width: "80%",
-    boxSizing: "border-box"
-
-    // border: "2px solid #666666"
-  },
-  controllerImage: {
-    alignSelf: "flex-end",
-    marginTop: "24px"
-
-    // border: "2px solid #666666"
-  },
   container: {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
     width: "100%",
     boxSizing: "border-box"
+
+    // border: "2px solid #666666"
+  },
+  leftUI: {
+    width: "80%",
+    boxSizing: "border-box"
+
+    // border: "2px solid #666666"
+  },
+  leftTopUI: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "flex-start",
+    marginTop: "100px",
+    justifyContent: "space-evenly"
+
+    // border: "2px solid #666666"
+  },
+  boyBandImage: {},
+  controllerImage: {
+    alignSelf: "flex-end",
+    marginTop: "24px"
+
+    // border: "2px solid #666666"
+  },
+  botUI: {
+    display: "flex",
+    alignContent: "flexEnd"
+
+    // border: "2px solid #666666"
+  },
+  botRightUI: {
+    alignSelf: "center",
+    marginRight: "80px"
 
     // border: "2px solid #666666"
   }

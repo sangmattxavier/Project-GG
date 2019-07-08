@@ -50,3 +50,8 @@ class CreateAccountObject extends Component {
   }
 }
 export default CreateAccountObject
+
+var styles = {
+  AccountWindow: {},
+  AccountTitle: {}
+}
