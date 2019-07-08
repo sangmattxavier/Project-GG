@@ -1,17 +1,10 @@
 import React, { Component } from "react"
-import CreateAccountObject from "../components/CreateAccountObject"
 import { Link } from "react-router-dom"
+import "../styles/SignupPage.css"
 
 import Logo from "../components/Logo"
 import BackButton from "../components/BackButton"
-
-import "../styles/SignupPage.css"
-//<Logo color={"white"} />
-//<img src={require("../Assets/BoyBand.png")} className="boyBandImage" />
-//<img src={require("../Assets/Controller.png")} className="controllerImage" />
-//    <Link to="/home"> <BackButton /> </Link>
-const width = window.innerWidth
-const height = window.innerHeight
+import CreateAccountObject from "../components/CreateAccountObject"
 
 class Signup extends Component {
   constructor() {
@@ -20,15 +13,15 @@ class Signup extends Component {
   }
   render() {
     return (
-      <div className="superContainer">
+      <div style={styles.superContainer}>
         <Link className="link" to="/">
           {""}
           <Logo color={"white"} />
           {""}
         </Link>
 
-        <div className="container">
-          <div className="leftUI">
+        <div style={styles.container}>
+          <div style={styles.leftUI}>
             <div className="topUI">
               <img
                 src={require("../Assets/BoyBand.png")}
@@ -43,6 +36,7 @@ class Signup extends Component {
               <img
                 src={require("../Assets/Controller.png")}
                 className="controllerImage"
+                style={styles.controllerImage}
               />
             </div>
           </div>
@@ -55,3 +49,35 @@ class Signup extends Component {
   }
 }
 export default Signup
+
+var styles = {
+  superContainer: {
+    overflowy: "hidden",
+    height: "100%",
+    width: "100%",
+    boxSizing: "border-box"
+
+    // border: "2px solid #666666"
+  },
+  leftUI: {
+    width: "80%",
+    boxSizing: "border-box"
+
+    // border: "2px solid #666666"
+  },
+  controllerImage: {
+    alignSelf: "flex-end",
+    marginTop: "24px"
+
+    // border: "2px solid #666666"
+  },
+  container: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    width: "100%",
+    boxSizing: "border-box"
+
+    // border: "2px solid #666666"
+  }
+}

@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../Assets/BAHNSCHRIFT.TTF") format("ttf");
+}
+@import url("https://fonts.googleapis.com/css?family=Bungee&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: auto;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: Bahnschrift;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #ea6341, #2c265a) fixed;
+  /* border-style: solid;
+  border-width: 2px; */
+}
+.link {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+hr {
+  border-width: 2px;
+  border-color: #3d393b;
+  border-style: solid;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #adacac;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #adacac;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #adacac;
+}
