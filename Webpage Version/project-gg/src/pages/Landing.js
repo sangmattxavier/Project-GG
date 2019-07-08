@@ -20,7 +20,7 @@ class Landing extends Component {
             <a href="#faq">FAQ</a>
           </div>
         </div>
-        <section className="window">
+        <section className="window" id="top">
           <Link to="/register">
             <ControlButton label="Register" id="register" />
           </Link>
@@ -33,7 +33,7 @@ class Landing extends Component {
             <ControlButton label="Login" id="login" />
           </Link>
         </section>
-        <section className="window">TEST</section>
+        <section className="window" id="about">TEST</section>
       </div>
     )
   }
