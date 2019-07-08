@@ -32,6 +32,7 @@ class Landing extends Component {
           <Link to="/login">
             <ControlButton label="Login" id="login" />
           </Link>
+          <a className="nav" href="#about">Click for More Info...</a>
         </section>
         <section className="window" id="about">
           <div className="graphic">
@@ -87,6 +88,9 @@ class Landing extends Component {
               FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER
             </div>
           </div>
+        </section>
+        <section id="contact">
+
         </section>
       </div>
     )
