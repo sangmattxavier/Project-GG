@@ -33,7 +33,20 @@ class Landing extends Component {
             <ControlButton label="Login" id="login" />
           </Link>
         </section>
-        <section className="window" id="about">TEST</section>
+        <section className="window" id="about">
+          <div className="graphic"><img 
+            src={require("../Assets/TwoPeopleHoldingControllers.png")}
+            id="aboutPic"
+            alt="Family"
+          /></div>
+          <div className="info">
+            <div className="infoHead">What is GG?</div>
+            <div className="infoDesc">
+              GG is a social media platform where users can share video-game 
+              related content to each other and earn experience for sharing that content.
+            </div>
+          </div>
+        </section>
       </div>
     )
   }
