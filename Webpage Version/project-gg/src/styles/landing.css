@@ -67,8 +67,19 @@
     height: 650px;
     width: 650px;
 }
+#about2Pic {
+    height: 500px;
+    width: 823.632130384px;
+}
+#about2 {
+    flex-direction: row-reverse;
+}
+#faqPic {
+    height: 600.023299161px;
+    width: 650px;
+}
 .info {
-    height: 650px;
+    height: 500px;
     width: 650px;
     text-align: left;
     color: white;
