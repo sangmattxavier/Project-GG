@@ -80,7 +80,7 @@ var styles = {
     flexDirection: "row",
     alignItems: "flex-start",
     marginTop: "100px",
-    justifyContent: "space-evenly"
+    justifyContent: "space-evenly",
 
     // border: "2px solid #666666"
   },
@@ -93,7 +93,7 @@ var styles = {
   },
   botUI: {
     display: "flex",
-    alignContent: "flexEnd"
+    alignContent: "flexEnd",
 
     // border: "2px solid #666666"
   },

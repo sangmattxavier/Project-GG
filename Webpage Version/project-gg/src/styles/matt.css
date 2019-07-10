@@ -2,10 +2,14 @@
   width: 100%;
 }
 .controllerImage {
-  margin-bottom: 0%;
-  margin-left: 0%;
-  height: 55%;
-  width: 55%;
+  display: block;
+  min-width: 1105px;
+  min-height: 474px;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  align-self: flex-end;
+  margin-top: 24px;
   /* 
   border-style: solid;
   border-width: 2px; */
