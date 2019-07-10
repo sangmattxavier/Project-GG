@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import "../styles/Home.css"
 
 import Navbar from "../components/Navbar"
 import LeftSideContent from "../components/LeftSideContent"

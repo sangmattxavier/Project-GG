@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
-import "../styles/SignupPage.css"
 
 import Logo from "../components/Logo"
 import HollowButton from "../components/HollowButton"

@@ -59,7 +59,7 @@
 }
 .accountRequirements li {
   margin: 0px;
-  margin-bottom: 12pxx;
+  margin-bottom: 12px;
 
   /* border: 2px solid #a88181; */
 }
@@ -114,7 +114,7 @@
   outline: none;
 
   /* border-style: solid;
-    border-width: 2pxx; */
+    border-width: 2px; */
 }
 
 /* HOLLOW BUTTON */
@@ -150,11 +150,11 @@
   justify-content: space-between;
 
   font-size: 28px;
-  border-bottom-width: 2pxx;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #3d393b;
 
-  /* border: 2pxx solid #666666; */
+  /* border: 2px solid #666666; */
 }
 .HomeLogoText {
   margin: 0;
@@ -165,13 +165,13 @@
   font-size: 60px;
   color: #ea6341;
 
-  /* border: 2pxx solid #666666; */
+  /* border: 2px solid #666666; */
 }
 .HomeSearchbar {
   align-self: center;
-  width: 500px;
+  width: 800px;
   box-sizing: border-box;
-  padding: 12pxx;
+  padding: 12px;
   padding-left: 16px;
 
   outline: none;
@@ -181,7 +181,7 @@
   background-color: transparent;
   border-style: solid;
   border-radius: 50px;
-  border-width: 2pxx;
+  border-width: 2px;
 }
 .HomeNavButtons {
   display: flex;
@@ -189,7 +189,7 @@
 }
 .HomeNavButtons label {
   color: white;
-  font-size: 12pxx;
+  font-size: 12px;
   text-align: center;
   cursor: pointer;
 }
@@ -204,7 +204,7 @@
 
   background: transparent;
   border: solid;
-  border-width: 2pxx;
+  border-width: 2px;
   border-color: #ea6341;
   border-radius: 50px;
 }
@@ -242,7 +242,7 @@
   padding-left: 24px;
 
   font-size: 28px;
-  border-bottom: 2pxx solid #3d393b;
+  border-bottom: 2px solid #3d393b;
 }
 .leftSideContentTitle p {
   margin: 0;
@@ -266,7 +266,7 @@
   display: flex;
   flex-direction: row;
 
-  border-bottom-width: 2pxx;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #3d393b;
 }
@@ -298,7 +298,7 @@
   height: 150px;
   /*   
     border-color: #a5a5a5;
-    border-width: 2pxx;
+    border-width: 2px;
     border-style: solid; */
 }
 .postInput {

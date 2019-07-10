@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import AccountSubmitButton from "./AccountSubmitButton"
 import { Link } from "react-router-dom"
+
+import AccountSubmitButton from "./AccountSubmitButton"
 
 class RegisterOrLoginObject extends Component {
   constructor(props) {
