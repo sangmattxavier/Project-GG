@@ -3,7 +3,7 @@ import AccountSubmitButton from "../components/AccountSubmitButton"
 import { Link } from "react-router-dom"
 
 import Logo from "../components/Logo"
-import BackButton from "../components/BackButton"
+import HollowButton from "../components/HollowButton"
 
 import "../styles/matt.css"
 class Login extends Component {

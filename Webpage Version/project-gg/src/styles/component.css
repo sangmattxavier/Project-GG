@@ -12,31 +12,6 @@
   border-radius: 56px;
   border-width: 2px;
 }
-.backButton {
-  z-index: 99;
-  font-family: "Bahnschrift";
-  font-size: 35px;
-  height: 4rem;
-  width: 16rem;
-  border-radius: 1rem;
-  color: white;
-  background-color: transparent;
-  border: 3px solid #c5d0ca;
-  outline: none;
-  text-align: center;
-}
-.logoText {
-  font-family: "Bungee", cursive;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  font-size: 60px;
-  margin-top: 14px;
-  margin-left: 16px;
-  line-height: 60px;
-  position: fixed;
-  z-index: 0;
-}
 .navbar {
   height: 100px;
   width: 100%;

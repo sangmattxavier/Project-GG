@@ -9,14 +9,11 @@ class SpicyPost extends Component {
   render() {
     return (
       <div>
-        <label className="spicyPostTitle">
-          <img
-            src={require("../Assets/icons/fire-100.png")}
-            className="SpicyPostIconImage"
-          />
+        <label className="subContentTitle">
+          <img src={require("../Assets/icons/fire-100.png")} />
           <p>Spiciest Posts of the Day!</p>
         </label>
-        <div className="spicyPostContent">
+        <div className="subContent">
           This is where we will put the spicy post content
         </div>
       </div>

@@ -4,7 +4,7 @@ function Logo(props) {
   let style = { color: props.color }
   return (
     <label>
-      <p className="logoText" style={style}>
+      <p className="logoPinned" style={style}>
         GG
       </p>
     </label>

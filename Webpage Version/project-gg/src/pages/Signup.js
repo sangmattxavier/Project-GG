@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import "../styles/SignupPage.css"
 
 import Logo from "../components/Logo"
-import BackButton from "../components/BackButton"
+import HollowButton from "../components/HollowButton"
 import CreateAccountObject from "../components/CreateAccountObject"
 
 class Signup extends Component {
@@ -30,10 +30,13 @@ class Signup extends Component {
               />
               <Link className="link" to="/">
                 {" "}
-                <BackButton />{" "}
+                <HollowButton
+                  label="← Back"
+                  position={styles.hollowButton}
+                />{" "}
               </Link>
             </div>
-            <div style={styles.botUI}>
+            <div style={styles.leftBotUI}>
               <img
                 src={require("../Assets/Controller.png")}
                 className="controllerImage"
@@ -41,7 +44,7 @@ class Signup extends Component {
               />
             </div>
           </div>
-          <div style={styles.botRightUI}>
+          <div style={styles.rightUI}>
             <CreateAccountObject />
           </div>
         </div>
@@ -51,7 +54,7 @@ class Signup extends Component {
 }
 export default Signup
 
-var styles = {
+const styles = {
   superContainer: {
     overflowy: "hidden",
     height: "100%",
@@ -78,7 +81,6 @@ var styles = {
   leftTopUI: {
     display: "flex",
     flexDirection: "row",
-    alignItems: "flex-start",
     marginTop: "100px",
     justifyContent: "space-evenly"
 
@@ -91,13 +93,14 @@ var styles = {
 
     // border: "2px solid #666666"
   },
-  botUI: {
+  hollowButton: {},
+  leftBotUI: {
     display: "flex",
     alignContent: "flexEnd"
 
     // border: "2px solid #666666"
   },
-  botRightUI: {
+  rightUI: {
     alignSelf: "center",
     marginRight: "80px"
 
