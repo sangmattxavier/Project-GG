@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import "./styles/component.css"
 import "./styles/Global.css"
 import "./styles/ComponentVisuals.css"
 import { Switch, Route } from "react-router-dom"
