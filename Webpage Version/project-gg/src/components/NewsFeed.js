@@ -1,13 +1,13 @@
 import React, { Component } from "react"
 
 class NewsFeed extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {}
   }
   render() {
     return (
-      <div>
+      <div style={this.props.adjust}>
         <label className="subContentTitle">
           <p>News Feed</p>
         </label>

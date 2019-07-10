@@ -10,7 +10,7 @@ class RegisterOrLoginObject extends Component {
   }
   render() {
     return (
-      <form style={this.props.adjust} className="accountContainer">
+      <form className="accountContainer" style={this.props.adjust}>
         <p className="accountTitle">Register</p>
 
         <div className="accountFormSection">

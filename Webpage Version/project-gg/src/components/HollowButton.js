@@ -7,7 +7,7 @@ class HollowButton extends Component {
   }
   render() {
     return (
-      <button className="hollowButton" style={this.props.position}>
+      <button className="hollowButton" style={this.props.adjust}>
         {this.props.label}
       </button>
     )

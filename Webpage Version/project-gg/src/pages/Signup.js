@@ -31,7 +31,7 @@ class Signup extends Component {
                 {" "}
                 <HollowButton
                   label="← Back"
-                  position={styles.hollowButton}
+                  adjust={styles.hollowButton}
                 />{" "}
               </Link>
             </div>

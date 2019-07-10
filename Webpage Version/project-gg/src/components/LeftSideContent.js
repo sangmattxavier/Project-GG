@@ -7,7 +7,7 @@ class LeftSideContent extends Component {
   }
   render() {
     return (
-      <div className="leftSideContent">
+      <div className="leftSideContent" style={this.props.adjust}>
         <label className="leftSideContentTitle">
           <p>{this.props.title}</p>
           <img src={require("../Assets/icons/circus-100.png")} />

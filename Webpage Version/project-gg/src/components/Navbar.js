@@ -2,13 +2,13 @@ import React, { Component } from "react"
 import { Link } from "react-router-dom"
 
 class Navbar extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {}
   }
   render() {
     return (
-      <div className="HomeNavBar">
+      <div className="HomeNavBar" style={this.props.adjust}>
         <Link className="link" to="/home">
           {" "}
           <p className="HomeLogoText">GG</p>{" "}

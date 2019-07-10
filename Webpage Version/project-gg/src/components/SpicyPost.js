@@ -1,13 +1,13 @@
 import React, { Component } from "react"
 
 class SpicyPost extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {}
   }
   render() {
     return (
-      <div>
+      <div style={this.props.adjust}>
         <label className="subContentTitle">
           <img src={require("../Assets/icons/fire-100.png")} />
           <p>Spiciest Posts of the Day!</p>

@@ -1,14 +1,14 @@
 import React, { Component } from "react"
 
 class NewPost extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {}
   }
   render() {
     return (
       <div>
-        <label className="subContentTitle">
+        <label className="subContentTitle" style={this.props.adjust}>
           <img src={require("../Assets/icons/post-96.png")} />
           <p>New Post</p>
         </label>
