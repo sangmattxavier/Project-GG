@@ -1,10 +1,8 @@
 import React, { Component } from "react"
-import "./styles/component.css"
+import { Switch, Route } from "react-router-dom"
 import "./styles/Global.css"
 import "./styles/ComponentVisuals.css"
-import { Switch, Route } from "react-router-dom"
 
-//import Navbar from "./Navbar"
 import Signup from "./pages/Signup"
 import Landing from "./pages/Landing"
 import Login from "./pages/Login"

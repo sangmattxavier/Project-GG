@@ -10,24 +10,37 @@ body {
   margin: auto;
   overflow-x: hidden;
   margin: 0;
-  font-family: Bahnschrift;
   width: 100%;
   box-sizing: border-box;
+
+  font-family: Bahnschrift;
   background: linear-gradient(to right, #ea6341, #2c265a) fixed;
-  /* border-style: solid;
-  border-width: 2px; */
+
+  /* border: 2px solid #666666; */
 }
 .link {
   text-decoration: none;
 }
 ul {
-  list-style: none;
   padding-left: 0;
+
+  list-style: none;
 }
 hr {
-  border-width: 2px;
-  border-color: #3d393b;
-  border-style: solid;
+  border-style: 2px solid #3d393b;
+}
+.logoPinned {
+  margin-top: 14px;
+  margin-left: 16px;
+  line-height: 60px;
+  position: fixed;
+  z-index: 0;
+
+  font-family: "Bungee", cursive;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  font-size: 60px;
 }
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -43,104 +56,4 @@ hr {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #adacac;
-}
-
-.HomeNavBar {
-  width: 100%;
-  box-sizing: border-box;
-  font-size: 28px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
-  font-size: 28px;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-bottom-color: #3d393b;
-
-  /* border: 2px solid #666666; */
-}
-.HomeLogoText {
-  margin: 0;
-  margin-left: 14px;
-  align-self: center;
-
-  font-family: "Bungee", cursive;
-  font-size: 60px;
-  color: #ea6341;
-  /* 
-    border-color: #5e5e5e;
-    border-width: 2px;
-    border-style: solid; */
-}
-.HomeSearchbar {
-  align-self: center;
-  width: 500px;
-  box-sizing: border-box;
-  padding: 12px;
-  padding-left: 16px;
-
-  outline: none;
-  color: white;
-  font-size: 20px;
-  border-color: #ea6341;
-  background-color: transparent;
-  border-style: solid;
-  border-radius: 50px;
-  border-width: 2px;
-}
-.HomeNavButtons {
-  display: flex;
-  flex-direction: row;
-
-  /* border-color: #5e5e5e;
-    border-width: 2px;
-    border-style: solid; */
-}
-.HomeNavButtons label {
-  color: white;
-  font-size: 12px;
-  text-align: center;
-  cursor: pointer;
-}
-.HomeNavProfile {
-  min-width: 65px;
-  min-height: 65px;
-  height: auto;
-  width: auto;
-  margin: 8px;
-  outline: none;
-  cursor: pointer;
-
-  background: transparent;
-  border: solid;
-  border-width: 2px;
-  border-color: #ea6341;
-  border-radius: 50px;
-}
-.HomeNavButton {
-  align-self: center;
-  box-sizing: border-box;
-  margin: 3px;
-
-  outline: none;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-.HomeNavButton:hover {
-  opacity: 0.5;
-}
-.HomeNavProfile:hover {
-  opacity: 0.5;
-}
-.HomeNavButtons img {
-  display: block;
-  max-width: 40px;
-  max-height: 40px;
-  width: auto;
-  height: auto;
-
-  background: transparent;
 }

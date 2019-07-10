@@ -1,18 +1,5 @@
-.HomeContainer {
-  /* display: flex;
-    flex-flow: column;
-    height: 100%; */
-  width: 100%;
-
-  color: white;
-  background: none;
-  background-color: #332f31;
-
-  /* border-color: #5e5e5e;
-    border-width: 2px;
-    border-style: solid; */
-}
-
+/* CONTROLLER IMAGE */
+/*--------------------------------------------------------------------*/
 .controllerImage {
   display: block;
   min-width: 1105px;
@@ -21,9 +8,11 @@
   height: auto;
   box-sizing: border-box;
 
-  /* border: 2p solid #a88181; */
+  /* border: 2px solid #a88181; */
 }
 
+/* BOY BAND IMAGE */
+/*--------------------------------------------------------------------*/
 .boyBandImage {
   display: block;
   min-width: 599px;
@@ -32,42 +21,300 @@
   height: auto;
   box-sizing: border-box;
 
-  /* border: 2p solid #a88181; */
+  /* border: 2px solid #a88181; */
 }
-.eventsTitle {
+
+/* REGISTER OR LOGIN OBJECT*/
+/*--------------------------------------------------------------------*/
+.accountContainer {
+  background-color: white;
+  border-radius: 45px;
+}
+.accountTitle {
+  text-align: center;
+  margin-bottom: 0px;
+
+  font-family: "Bungee", cursive;
+  font-size: 40px;
+
+  /* border: 2px solid #a88181; */
+}
+.accountFormSection {
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 18px;
+  margin-top: 8px;
+  width: 80%;
+  box-sizing: border-box;
+
+  /* border: 2px solid #a88181; */
+}
+.accountRequirements {
+  text-align: left;
+  margin-top: 30px;
+
+  font-size: 25px;
+  /* border: 2px solid #a88181; */
+}
+.accountRequirements li {
+  margin: 0px;
+  margin-bottom: 12px;
+
+  /* border: 2px solid #a88181; */
+}
+.accountContainer input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  align-self: center;
+  margin-top: 18px;
+  padding: 5px;
+
+  font-size: 30px;
+  font-family: inherit;
+  border: none;
+  border-bottom: solid;
+  border-color: #707070;
+  border-width: 1px;
+  outline: none;
+
+  /* border: 2px solid #a88181; */
+}
+.accountNoteSection {
+  width: 80%;
+  box-sizing: border-box;
+  margin-top: 26px;
+  margin-bottom: 34px;
+  font-size: 24px;
+
+  /* border: 2px solid #a88181; */
+}
+.accountNote {
+  margin: 0;
+  text-align: center;
+  margin: auto;
+  font-size: 24px;
+  color: #666666;
+
+  /* border: 2px solid #a88181; */
+}
+
+/* CREATE/LOGIN BUTTON */
+/*--------------------------------------------------------------------*/
+.AccountSubmitButton {
+  width: 240px;
+  height: 50px;
+  font-size: 30px;
+
+  font-family: inherit;
+  border-radius: 55px;
+  background: linear-gradient(to right, #ea6341, #2c265a);
+  color: white;
+  outline: none;
+
+  /* border-style: solid;
+    border-width: 2px; */
+}
+
+/* HOLLOW BUTTON */
+/*--------------------------------------------------------------------*/
+.hollowButton {
+  z-index: 99;
+  font-family: "Bahnschrift";
+  font-size: 35px;
+  height: 4rem;
+  width: 16rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: transparent;
+  border: 3px solid #c5d0ca;
+  outline: none;
+  text-align: center;
+}
+.hollowButton:hover {
+  color: #37cd7b;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* HOME NAV BAR */
+/*--------------------------------------------------------------------*/
+.HomeNavBar {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 28px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #3d393b;
+
+  /* border: 2px solid #666666; */
+}
+.HomeLogoText {
+  margin: 0;
+  margin-left: 14px;
+  align-self: center;
+
+  font-family: "Bungee", cursive;
+  font-size: 60px;
+  color: #ea6341;
+
+  /* border: 2px solid #666666; */
+}
+.HomeSearchbar {
+  align-self: center;
+  width: 800px;
+  box-sizing: border-box;
+  padding: 12px;
+  padding-left: 16px;
+
+  outline: none;
+  color: white;
+  font-size: 20px;
+  border-color: #ea6341;
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 50px;
+  border-width: 2px;
+}
+.HomeNavButtons {
+  display: flex;
+  flex-direction: row;
+}
+.HomeNavButtons label {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+.HomeNavProfile {
+  min-width: 65px;
+  min-height: 65px;
+  height: auto;
+  width: auto;
+  margin: 8px;
+  outline: none;
+  cursor: pointer;
+
+  background: transparent;
+  border: solid;
+  border-width: 2px;
+  border-color: #ea6341;
+  border-radius: 50px;
+}
+.HomeNavButton {
+  align-self: center;
+  box-sizing: border-box;
+  margin: 3px;
+
+  outline: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.HomeNavButton:hover {
+  opacity: 0.5;
+}
+.HomeNavProfile:hover {
+  opacity: 0.5;
+}
+.HomeNavButtons img {
+  display: block;
+  max-width: 40px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+
+  background: transparent;
+}
+
+/* LEFT SIDE CONTENT */
+/*--------------------------------------------------------------------*/
+.leftSideContentTitle {
   display: flex;
   align-items: flex-end;
   padding-left: 24px;
 
   font-size: 28px;
+  border-bottom: 2px solid #3d393b;
+}
+.leftSideContentTitle p {
+  margin: 0;
+}
+.leftSideContentTitle img {
+  margin-left: 5px;
+  height: 50px;
+  width: 50px;
+}
+.leftSideContent li {
+  text-align: right;
+  font-size: 20px;
+}
+.leftSideContentList p {
+  margin-top: 0;
+}
+
+/* MIDDLE SUB CONTENT */
+/*--------------------------------------------------------------------*/
+.subContentTitle {
+  display: flex;
+  flex-direction: row;
 
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #3d393b;
 }
-.eventsTitle p {
+.subContentTitle img {
   margin: 0;
+  margin-right: 8px;
+  display: block;
+  max-width: 55px;
+  max-height: 55px;
+  width: auto;
+  height: auto;
+  align-self: center;
+}
+.subContentTitle p {
+  font-size: 35px;
+  align-self: center;
+  margin: 0;
+}
+.subContent {
+  text-align: center;
+  font-style: italic;
+  font-size: 45px;
+  color: #e4a08f;
+}
 
-  /* border-color: #5e5e5e;
+/* NEW POST INPUT */
+/*--------------------------------------------------------------------*/
+.post {
+  height: 150px;
+  /*   
+    border-color: #a5a5a5;
     border-width: 2px;
     border-style: solid; */
 }
-.eventsTitle img {
-  margin-left: 5px;
-  height: 50px;
-  width: 50px;
-}
-.eventsList p {
-  margin-top: 0;
-}
-.HomeEvents li {
-  text-align: right;
-  font-size: 20px;
-}
-.HomeGroups {
-  margin-top: 16px;
+.postInput {
+  margin-top: 19px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 85px;
 
-  /* border-color: #5e5e5e;
-    border-width: 2px;
-    border-style: solid; */
+  font-family: Bahnschrift;
+  padding: 16px;
+  padding-left: 24px;
+  font-size: 30px;
+  color: white;
+  background-color: #3d393b;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #3d393b;
+  outline: none;
 }

@@ -1,10 +1,9 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
-import "../styles/SignupPage.css"
 
 import Logo from "../components/Logo"
-import BackButton from "../components/BackButton"
-import CreateAccountObject from "../components/CreateAccountObject"
+import HollowButton from "../components/HollowButton"
+import RegisterOrLoginObject from "../components/RegisterOrLoginObject"
 
 class Signup extends Component {
   constructor() {
@@ -30,10 +29,13 @@ class Signup extends Component {
               />
               <Link className="link" to="/">
                 {" "}
-                <BackButton />{" "}
+                <HollowButton
+                  label="← Back"
+                  adjust={styles.hollowButton}
+                />{" "}
               </Link>
             </div>
-            <div style={styles.botUI}>
+            <div style={styles.leftBotUI}>
               <img
                 src={require("../Assets/Controller.png")}
                 className="controllerImage"
@@ -41,8 +43,8 @@ class Signup extends Component {
               />
             </div>
           </div>
-          <div style={styles.botRightUI}>
-            <CreateAccountObject />
+          <div style={styles.rightUI}>
+            <RegisterOrLoginObject adjust={styles.RegisterOrLoginObject} />
           </div>
         </div>
       </div>
@@ -51,7 +53,7 @@ class Signup extends Component {
 }
 export default Signup
 
-var styles = {
+const styles = {
   superContainer: {
     overflowy: "hidden",
     height: "100%",
@@ -78,7 +80,6 @@ var styles = {
   leftTopUI: {
     display: "flex",
     flexDirection: "row",
-    alignItems: "flex-start",
     marginTop: "100px",
     justifyContent: "space-evenly",
 
@@ -91,16 +92,25 @@ var styles = {
 
     // border: "2px solid #666666"
   },
-  botUI: {
+  hollowButton: {},
+  leftBotUI: {
     display: "flex",
     alignContent: "flexEnd",
 
     // border: "2px solid #666666"
   },
-  botRightUI: {
+  rightUI: {
     alignSelf: "center",
     marginRight: "80px"
 
     // border: "2px solid #666666"
+  },
+  RegisterOrLoginObject: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    width: "70%",
+    boxSizing: "border-box",
+    float: "right"
   }
 }

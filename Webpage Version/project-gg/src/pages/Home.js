@@ -1,9 +1,10 @@
 import React, { Component } from "react"
-import "../styles/Home.css"
 
 import Navbar from "../components/Navbar"
 import LeftSideContent from "../components/LeftSideContent"
 import SpicyPost from "../components/SpicyPost"
+import NewPost from "../components/NewPost"
+import NewsFeed from "../components/NewsFeed"
 
 class Home extends Component {
   constructor() {
@@ -12,43 +13,26 @@ class Home extends Component {
   }
   render() {
     return (
-      <div className="HomeContainer">
+      <div style={styles.homeContainer}>
         <Navbar />
 
-        <div className="HomeContent">
-          <div className="HomeEventsAndGroupsColumn">
-            <LeftSideContent />
-            <LeftSideContent />
+        <div style={styles.homeContet}>
+          <div style={styles.homeEventsAndGroupsColumn}>
+            <LeftSideContent title="Events" />
+            <LeftSideContent title="Groups" />
           </div>
-          <div className="HomeMainContentColumn">
-            <div className="HomeSpicyPostSection">
+          <div style={styles.homeMainContentColumn}>
+            <div style={styles.homeSpicyPostSection}>
               <SpicyPost />
             </div>
-            <div className="HomeSpicyPostSection">
-              <label className="spicyPostTitle">
-                <img
-                  src={require("../Assets/icons/post-96.png")}
-                  className="SpicyPostIconImage"
-                />
-                <p>New Post</p>
-              </label>
-              <div className="spicyPostContent">
-                <form className="Post">
-                  <input
-                    type="text"
-                    placeholder="Post Here..."
-                    className="PostInput"
-                  />
-                </form>
-              </div>
+            <div style={styles.homeNewPostSection}>
+              <NewPost />
             </div>
-            <div className="HomeSpicyPostSection">
-              <label className="spicyPostTitle">
-                <p>News Feed</p>
-              </label>
+            <div style={styles.homeNewsFeedSection}>
+              <NewsFeed />
             </div>
           </div>
-          <div className="HomeFriendsColumn">Friends</div>
+          <div style={styles.homeFriendsColumn}>Friends</div>
         </div>
       </div>
     )
@@ -56,13 +40,52 @@ class Home extends Component {
 }
 export default Home
 
-var styles = {
-  homeNavBar: {
+const styles = {
+  homeContainer: {
     width: "100%",
-    boxSizing: "border-box",
+    color: "white",
+    background: "none",
+    backgroundColor: "#332f31"
+  },
+  homeContet: {
     display: "flex",
     flexDirection: "row",
-    alignItems: "center",
+    width: "100%",
+    height: "100%",
+    boxSizing: "border-box",
     justifyContent: "space-between"
+  },
+  homeEventsAndGroupsColumn: {
+    display: "flex",
+    flexDirection: "column",
+    marginTop: "100px",
+    width: "15%",
+    boxSizing: "border-box"
+  },
+  leftSideContent: {},
+  homeMainContentColumn: {
+    display: "flex",
+    flexDirection: "column",
+    marginTop: "50px",
+    width: "60%"
+  },
+  homeSpicyPostSection: {
+    height: "300px"
+  },
+  homeNewPostSection: {
+    height: "300px"
+  },
+  homeNewsFeedSection: {
+    height: "300px"
+  },
+  homeFriendsColumn: {
+    display: "flex",
+    flexDirection: "column",
+    marginTop: "100px",
+    width: "15%",
+    boxSizing: "border-box",
+
+    height: "370px", //TEMPORARY
+    border: "2px solid #a5a5a5" //TEMPORARY
   }
 }
