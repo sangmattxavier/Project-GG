@@ -4,7 +4,7 @@ import "../styles/SignupPage.css"
 
 import Logo from "../components/Logo"
 import HollowButton from "../components/HollowButton"
-import CreateAccountObject from "../components/CreateAccountObject"
+import RegisterOrLoginObject from "../components/RegisterOrLoginObject"
 
 class Signup extends Component {
   constructor() {
@@ -45,7 +45,7 @@ class Signup extends Component {
             </div>
           </div>
           <div style={styles.rightUI}>
-            <CreateAccountObject />
+            <RegisterOrLoginObject adjust={styles.RegisterOrLoginObject} />
           </div>
         </div>
       </div>
@@ -105,5 +105,13 @@ const styles = {
     marginRight: "80px"
 
     // border: "2px solid #666666"
+  },
+  RegisterOrLoginObject: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    width: "70%",
+    boxSizing: "border-box",
+    float: "right"
   }
 }

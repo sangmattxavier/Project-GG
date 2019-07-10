@@ -1,21 +1,20 @@
 import React, { Component } from "react"
-import AccountSubmitButton from "../components/AccountSubmitButton"
+import AccountSubmitButton from "./AccountSubmitButton"
 import { Link } from "react-router-dom"
 
-class CreateAccountObject extends Component {
-  constructor() {
-    super()
+class RegisterOrLoginObject extends Component {
+  constructor(props) {
+    super(props)
     this.state = {}
   }
   render() {
     return (
-      <form className="AccountWindow">
-        <div>
-          <p className="AccountTitle">Register</p>
-        </div>
-        <div className="AccountFormSection">
+      <form style={this.props.adjust} className="accountContainer">
+        <p className="accountTitle">Register</p>
+
+        <div className="accountFormSection">
           <input type="text" placeholder="Email" />
-          <div className="AccountRequirements">
+          <div className="accountRequirements">
             <p>Password Requirements</p>
 
             <ul>
@@ -31,12 +30,15 @@ class CreateAccountObject extends Component {
         <div>
           <Link className="link" to="/home">
             {""}
-            <AccountSubmitButton label="Create" />
+            <AccountSubmitButton
+              label="Create"
+              adjust={styles.AccountSubmitButton}
+            />
             {""}
           </Link>
         </div>
-        <div className="AccountNoteSection">
-          <p className="AccountNote">
+        <div className="accountNoteSection">
+          <p className="accountNote">
             Existing User?
             <Link className="link" to="/login">
               {""}
@@ -49,9 +51,11 @@ class CreateAccountObject extends Component {
     )
   }
 }
-export default CreateAccountObject
+export default RegisterOrLoginObject
 
-var styles = {
-  AccountWindow: {},
-  AccountTitle: {}
+const styles = {
+  AccountSubmitButton: {
+    marginTop: "10px",
+    marginBottom: "0px"
+  }
 }

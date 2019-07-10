@@ -8,7 +8,7 @@
   height: auto;
   box-sizing: border-box;
 
-  /* border: 2p solid #a88181; */
+  /* border: 2px solid #a88181; */
 }
 
 /* BOY BAND IMAGE */
@@ -21,7 +21,100 @@
   height: auto;
   box-sizing: border-box;
 
-  /* border: 2p solid #a88181; */
+  /* border: 2px solid #a88181; */
+}
+
+/* REGISTER OR LOGIN OBJECT*/
+/*--------------------------------------------------------------------*/
+.accountContainer {
+  background-color: white;
+  border-radius: 45px;
+}
+.accountTitle {
+  text-align: center;
+  margin-bottom: 0px;
+
+  font-family: "Bungee", cursive;
+  font-size: 40px;
+
+  /* border: 2px solid #a88181; */
+}
+.accountFormSection {
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 18px;
+  margin-top: 8px;
+  width: 80%;
+  box-sizing: border-box;
+
+  /* border: 2px solid #a88181; */
+}
+.accountRequirements {
+  text-align: left;
+  margin-top: 30px;
+
+  font-size: 25px;
+  /* border: 2px solid #a88181; */
+}
+.accountRequirements li {
+  margin: 0px;
+  margin-bottom: 12pxx;
+
+  /* border: 2px solid #a88181; */
+}
+.accountContainer input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  align-self: center;
+  margin-top: 18px;
+  padding: 5px;
+
+  font-size: 30px;
+  font-family: inherit;
+  border: none;
+  border-bottom: solid;
+  border-color: #707070;
+  border-width: 1px;
+  outline: none;
+
+  /* border: 2px solid #a88181; */
+}
+.accountNoteSection {
+  width: 80%;
+  box-sizing: border-box;
+  margin-top: 26px;
+  margin-bottom: 34px;
+  font-size: 24px;
+
+  /* border: 2px solid #a88181; */
+}
+.accountNote {
+  margin: 0;
+  text-align: center;
+  margin: auto;
+  font-size: 24px;
+  color: #666666;
+
+  /* border: 2px solid #a88181; */
+}
+
+/* CREATE/LOGIN BUTTON */
+/*--------------------------------------------------------------------*/
+.AccountSubmitButton {
+  width: 240px;
+  height: 50px;
+  font-size: 30px;
+
+  font-family: inherit;
+  border-radius: 55px;
+  background: linear-gradient(to right, #ea6341, #2c265a);
+  color: white;
+  outline: none;
+
+  /* border-style: solid;
+    border-width: 2pxx; */
 }
 
 /* HOLLOW BUTTON */
@@ -57,11 +150,11 @@
   justify-content: space-between;
 
   font-size: 28px;
-  border-bottom-width: 2px;
+  border-bottom-width: 2pxx;
   border-bottom-style: solid;
   border-bottom-color: #3d393b;
 
-  /* border: 2px solid #666666; */
+  /* border: 2pxx solid #666666; */
 }
 .HomeLogoText {
   margin: 0;
@@ -72,13 +165,13 @@
   font-size: 60px;
   color: #ea6341;
 
-  /* border: 2px solid #666666; */
+  /* border: 2pxx solid #666666; */
 }
 .HomeSearchbar {
   align-self: center;
   width: 500px;
   box-sizing: border-box;
-  padding: 12px;
+  padding: 12pxx;
   padding-left: 16px;
 
   outline: none;
@@ -88,7 +181,7 @@
   background-color: transparent;
   border-style: solid;
   border-radius: 50px;
-  border-width: 2px;
+  border-width: 2pxx;
 }
 .HomeNavButtons {
   display: flex;
@@ -96,7 +189,7 @@
 }
 .HomeNavButtons label {
   color: white;
-  font-size: 12px;
+  font-size: 12pxx;
   text-align: center;
   cursor: pointer;
 }
@@ -111,7 +204,7 @@
 
   background: transparent;
   border: solid;
-  border-width: 2px;
+  border-width: 2pxx;
   border-color: #ea6341;
   border-radius: 50px;
 }
@@ -149,7 +242,7 @@
   padding-left: 24px;
 
   font-size: 28px;
-  border-bottom: 2px solid #3d393b;
+  border-bottom: 2pxx solid #3d393b;
 }
 .leftSideContentTitle p {
   margin: 0;
@@ -173,7 +266,7 @@
   display: flex;
   flex-direction: row;
 
-  border-bottom-width: 2px;
+  border-bottom-width: 2pxx;
   border-bottom-style: solid;
   border-bottom-color: #3d393b;
 }
@@ -201,15 +294,15 @@
 
 /* NEW POST INPUT */
 /*--------------------------------------------------------------------*/
-.Post {
+.post {
   height: 150px;
   /*   
     border-color: #a5a5a5;
-    border-width: 2px;
+    border-width: 2pxx;
     border-style: solid; */
 }
-.PostInput {
-  margin-top: 12px;
+.postInput {
+  margin-top: 12pxx;
   width: 100%;
   box-sizing: border-box;
   height: 85px;

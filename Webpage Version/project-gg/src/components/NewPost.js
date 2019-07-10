@@ -14,11 +14,11 @@ class NewPost extends Component {
           <p>New Post</p>
         </label>
         <div className="subContent">
-          <form className="Post">
+          <form className="post">
             <input
               type="text"
               placeholder="Post Here..."
-              className="PostInput"
+              className="postInput"
             />
           </form>
         </div>
