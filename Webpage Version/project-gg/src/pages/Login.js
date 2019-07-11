@@ -19,10 +19,10 @@ class Login extends Component {
         </div>
         <div className="container">
           <img
-                src={require("../Assets/Controller.png")}
-                className="controllerImage"
-                style={styles.controllerImage}
-              />
+            src={require("../Assets/Controller.png")}
+            className="controllerImage"
+            style={styles.controllerImage}
+          />
           <form className="LoginWindow">
             <p className="LoginTitle">Login</p>
             <input type="text" placeholder="Email" />
@@ -39,8 +39,8 @@ export default Login
 var styles = {
   controllerImage: {
     alignSelf: "flex-end",
-    marginTop: "24px",
-    position: 
+    marginTop: "24px"
+    //position:
     // border: "2px solid #666666"
-  },
+  }
 }
