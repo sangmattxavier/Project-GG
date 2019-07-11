@@ -44,7 +44,12 @@ class Signup extends Component {
             </div>
           </div>
           <div style={styles.rightUI}>
-            <RegisterOrLoginObject adjust={styles.RegisterOrLoginObject} />
+            <RegisterOrLoginObject
+              adjust={styles.RegisterOrLoginObject}
+              userRegister={true}
+              title={"Register"}
+              submitLabel="Create"
+            />
           </div>
         </div>
       </div>
@@ -81,7 +86,7 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     marginTop: "100px",
-    justifyContent: "space-evenly",
+    justifyContent: "space-evenly"
 
     // border: "2px solid #666666"
   },
@@ -95,7 +100,7 @@ const styles = {
   hollowButton: {},
   leftBotUI: {
     display: "flex",
-    alignContent: "flexEnd",
+    alignContent: "flexEnd"
 
     // border: "2px solid #666666"
   },
