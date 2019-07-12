@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "react-router-dom"
 
 class AccountSubmitButton extends Component {
   constructor(props) {
@@ -7,9 +8,13 @@ class AccountSubmitButton extends Component {
   }
   render() {
     return (
-      <button className="AccountSubmitButton" style={this.props.adjust}>
-        {this.props.label}
-      </button>
+      <Link className="link" to={this.props.link}>
+        {""}
+        <button className="AccountSubmitButton" style={this.props.adjust}>
+          {this.props.label}
+        </button>
+        {""}
+      </Link>
     )
   }
 }

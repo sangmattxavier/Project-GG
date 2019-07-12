@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
 
+import NavBarIcon from "./NavBarIcon"
+
 class Navbar extends Component {
   constructor(props) {
     super(props)
@@ -22,25 +24,26 @@ class Navbar extends Component {
         </form>
         <div className="HomeNavButtons">
           <button className="HomeNavProfile" />
-          <button className="HomeNavButton">
-            <img src={require("../Assets/icons/castle-90.png")} />
-          </button>
-          <button className="HomeNavButton">
-            <img src={require("../Assets/icons/activity-100.png")} />
-          </button>
-          <button className="HomeNavButton">
-            <img src={require("../Assets/icons/mailbox-100.png")} />
-          </button>
-          <button className="HomeNavButton">
-            <img src={require("../Assets/icons/settings-100.png")} />
-          </button>
-
-          <button className="HomeNavButton">
-            <Link className="link" to="/">
-              {" "}
-              <img src={require("../Assets/icons/logout-100.png")} />
-            </Link>
-          </button>
+          <NavBarIcon
+            link="/"
+            require={require("../Assets/icons/castle-90.png")}
+          />
+          <NavBarIcon
+            link="/"
+            require={require("../Assets/icons/activity-100.png")}
+          />
+          <NavBarIcon
+            link="/"
+            require={require("../Assets/icons/mailbox-100.png")}
+          />
+          <NavBarIcon
+            link="/"
+            require={require("../Assets/icons/settings-100.png")}
+          />
+          <NavBarIcon
+            link="/"
+            require={require("../Assets/icons/logout-100.png")}
+          />
         </div>
       </div>
     )
