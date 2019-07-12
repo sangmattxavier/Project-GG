@@ -33,9 +33,9 @@ class RegisterOrLoginObject extends Component {
               <ul>{requirementsComponent}</ul>
             </div>
           )}
-          <input type="text" placeholder="Password" />
+          <input type="password" placeholder="Password" />
           {this.props.userRegister && (
-            <input type="text" placeholder="Confirm Password" />
+            <input type="password" placeholder="Confirm Password" />
           )}
         </form>
 

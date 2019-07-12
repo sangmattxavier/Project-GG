@@ -5,7 +5,7 @@ import Logo from "../components/Logo"
 import HollowButton from "../components/HollowButton"
 import RegisterOrLoginObject from "../components/RegisterOrLoginObject"
 
-class Signup extends Component {
+class Register extends Component {
   constructor() {
     super()
     this.state = {}
@@ -56,7 +56,7 @@ class Signup extends Component {
     )
   }
 }
-export default Signup
+export default Register
 
 const styles = {
   superContainer: {

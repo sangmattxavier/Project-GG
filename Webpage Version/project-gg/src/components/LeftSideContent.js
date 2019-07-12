@@ -1,5 +1,34 @@
 import React, { Component } from "react"
 
+const eventContent = {
+  event1: {
+    label: "Smash Tournament",
+    subLabel: "7.20.19"
+  },
+  event2: {
+    label: "CSGO Tournament",
+    subLabel: "8.13.19"
+  },
+  event3: {
+    label: "Smash Meetup",
+    subLabel: "10.3.19"
+  }
+}
+const groupContent = {
+  group1: {
+    label: "NJ Smash Group",
+    subLabel: "Admin"
+  },
+  group2: {
+    label: "CSGO West Coast",
+    subLabel: "Member"
+  },
+  group3: {
+    label: "College Gamers",
+    subLabel: "Member"
+  }
+}
+const content = []
 class LeftSideContent extends Component {
   constructor(props) {
     super(props)
@@ -10,7 +39,7 @@ class LeftSideContent extends Component {
       <div className="leftSideContent" style={this.props.adjust}>
         <label className="leftSideContentTitle">
           <p>{this.props.title}</p>
-          <img src={require("../Assets/icons/circus-100.png")} />
+          <img src={this.props.require} />
         </label>
         <ul className="leftSideContentList">
           <li>

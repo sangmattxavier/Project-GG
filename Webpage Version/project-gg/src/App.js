@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom"
 import "./styles/Global.css"
 import "./styles/ComponentVisuals.css"
 
-import Signup from "./pages/Signup"
+import Register from "./pages/Register"
 import Landing from "./pages/Landing"
 import Login from "./pages/Login"
 import Home from "./pages/Home"
@@ -20,7 +20,7 @@ class App extends Component {
       <div>
         <Switch>
           <Route exact path="/" component={Landing} />
-          <Route path="/register" component={Signup} />
+          <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
           <Route path="/home" component={Home} />
         </Switch>

@@ -34,7 +34,7 @@ class Navbar extends Component {
           />
           <NavBarIcon
             link="/"
-            require={require("../Assets/icons/mailbox-100.png")}
+            require={require("../Assets/icons/messages-90.png")}
           />
           <NavBarIcon
             link="/"

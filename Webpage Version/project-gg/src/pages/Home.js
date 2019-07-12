@@ -5,6 +5,7 @@ import LeftSideContent from "../components/LeftSideContent"
 import SpicyPost from "../components/SpicyPost"
 import NewPost from "../components/NewPost"
 import NewsFeed from "../components/NewsFeed"
+import Friends from "../components/Friends"
 
 class Home extends Component {
   constructor() {
@@ -18,8 +19,16 @@ class Home extends Component {
 
         <div style={styles.homeContet}>
           <div style={styles.homeEventsAndGroupsColumn}>
-            <LeftSideContent title="Events" />
-            <LeftSideContent title="Groups" />
+            <LeftSideContent
+              title="Events"
+              isEvent={true}
+              require={require("../Assets/icons/circus-100.png")}
+            />
+            <LeftSideContent
+              title="Groups"
+              isEvent={false}
+              require={require("../Assets/icons/groups-48.png")}
+            />
           </div>
           <div style={styles.homeMainContentColumn}>
             <div style={styles.homeSpicyPostSection}>
@@ -32,7 +41,9 @@ class Home extends Component {
               <NewsFeed />
             </div>
           </div>
-          <div style={styles.homeFriendsColumn}>Friends</div>
+          <div style={styles.homeFriendsColumn}>
+            <Friends />
+          </div>
         </div>
       </div>
     )
@@ -53,13 +64,13 @@ const styles = {
     width: "100%",
     height: "100%",
     boxSizing: "border-box",
-    justifyContent: "space-between"
+    justifyContent: "space-evenly"
   },
   homeEventsAndGroupsColumn: {
     display: "flex",
     flexDirection: "column",
-    marginTop: "100px",
-    width: "15%",
+    marginTop: "50px",
+    width: "12%",
     boxSizing: "border-box"
   },
   leftSideContent: {},
@@ -67,7 +78,7 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     marginTop: "50px",
-    width: "60%"
+    width: "50%"
   },
   homeSpicyPostSection: {
     height: "300px"
@@ -81,11 +92,8 @@ const styles = {
   homeFriendsColumn: {
     display: "flex",
     flexDirection: "column",
-    marginTop: "100px",
-    width: "15%",
-    boxSizing: "border-box",
-
-    height: "370px", //TEMPORARY
-    border: "2px solid #a5a5a5" //TEMPORARY
+    marginTop: "50px",
+    width: "12%",
+    boxSizing: "border-box"
   }
 }
