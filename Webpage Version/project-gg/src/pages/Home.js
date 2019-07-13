@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Animated } from "react-animated-css"
 
 import Navbar from "../components/Navbar"
 import LeftSideContent from "../components/LeftSideContent"
