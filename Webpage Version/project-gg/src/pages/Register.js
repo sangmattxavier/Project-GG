@@ -21,57 +21,39 @@ class Register extends Component {
         </Link>
 
         <div style={styles.container}>
-          <Animated
-            animationIn="slideInLeft"
-            animationInDuration={2000}
-            animationInDelay={500}
-            isVisible={true}
-          >
-            <div style={styles.leftUI}>
-              <div style={styles.leftTopUI}>
-                <img
-                  src={require("../Assets/BoyBand.png")}
-                  className="boyBandImage"
-                  style={styles.boyBandImage}
-                />
-                <Animated
-                  animationIn="pulse"
-                  animationInDuration={1500}
-                  animationInDelay={2500}
-                  isVisible={true}
-                >
-                  <Link className="link" to="/">
-                    {" "}
-                    <HollowButton
-                      label="← Back"
-                      adjust={styles.hollowButton}
-                    />{" "}
-                  </Link>
-                </Animated>
-              </div>
-              <div style={styles.leftBotUI}>
-                <img
-                  src={require("../Assets/Controller.png")}
-                  className="controllerImage"
-                  style={styles.controllerImage}
-                />
-              </div>
+          <div style={styles.leftUI}>
+            <div style={styles.leftTopUI}>
+              <img
+                src={require("../assets/images/BoyBand.png")}
+                className="boyBandImage"
+                style={styles.boyBandImage}
+              />
+
+              <Link className="link" to="/">
+                {" "}
+                <HollowButton
+                  label="← Back"
+                  adjust={styles.hollowButton}
+                />{" "}
+              </Link>
             </div>
-          </Animated>
-          <Animated
-            animationIn="slideInUp"
-            animationInDuration={1500}
-            isVisible={true}
-          >
-            <div style={styles.rightUI}>
-              <RegisterOrLoginObject
-                adjust={styles.RegisterOrLoginObject}
-                userRegister={true}
-                title={"Register"}
-                submitLabel="Create"
+            <div style={styles.leftBotUI}>
+              <img
+                src={require("../assets/images/Controller.png")}
+                className="controllerImage"
+                style={styles.controllerImage}
               />
             </div>
-          </Animated>
+          </div>
+
+          <div style={styles.rightUI}>
+            <RegisterOrLoginObject
+              adjust={styles.RegisterOrLoginObject}
+              userRegister={true}
+              title={"Register"}
+              submitLabel="Create"
+            />
+          </div>
         </div>
       </div>
     )

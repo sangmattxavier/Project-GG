@@ -26,23 +26,23 @@ class Navbar extends Component {
           <button className="HomeNavProfile" />
           <NavBarIcon
             link="/"
-            require={require("../Assets/icons/castle-90.png")}
+            require={require("../assets/icons/castle-90.png")}
           />
           <NavBarIcon
             link="/"
-            require={require("../Assets/icons/activity-100.png")}
+            require={require("../assets/icons/activity-100.png")}
           />
           <NavBarIcon
             link="/"
-            require={require("../Assets/icons/messages-90.png")}
+            require={require("../assets/icons/messages-90.png")}
           />
           <NavBarIcon
             link="/"
-            require={require("../Assets/icons/settings-100.png")}
+            require={require("../assets/icons/settings-100.png")}
           />
           <NavBarIcon
             link="/"
-            require={require("../Assets/icons/logout-100.png")}
+            require={require("../assets/icons/logout-100.png")}
           />
         </div>
       </div>

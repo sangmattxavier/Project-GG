@@ -23,12 +23,12 @@ class Home extends Component {
             <LeftSideContent
               title="Events"
               isEvent={true}
-              require={require("../Assets/icons/circus-100.png")}
+              require={require("../assets/icons/circus-100.png")}
             />
             <LeftSideContent
               title="Groups"
               isEvent={false}
-              require={require("../Assets/icons/groups-48.png")}
+              require={require("../assets/icons/groups-48.png")}
             />
           </div>
           <div style={styles.homeMainContentColumn}>

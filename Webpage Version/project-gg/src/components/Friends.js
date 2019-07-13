@@ -45,7 +45,7 @@ class Friends extends Component {
       <div className="friends" style={this.props.adjust}>
         <label className="friendsTitle">
           <p>Comrades</p>
-          <img src={require("../Assets/icons/heart-50.png")} />
+          <img src={require("../assets/icons/heart-50.png")} />
         </label>
         <ul className="friendsList">
           <li>

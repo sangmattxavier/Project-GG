@@ -9,7 +9,7 @@ class NewPost extends Component {
     return (
       <div>
         <label className="subContentTitle" style={this.props.adjust}>
-          <img src={require("../Assets/icons/post-96.png")} />
+          <img src={require("../assets/icons/post-96.png")} />
           <p>New Post</p>
         </label>
         <div className="subContent">

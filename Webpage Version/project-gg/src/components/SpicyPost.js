@@ -9,7 +9,7 @@ class SpicyPost extends Component {
     return (
       <div style={this.props.adjust}>
         <label className="subContentTitle">
-          <img src={require("../Assets/icons/fire-100.png")} />
+          <img src={require("../assets/icons/fire-100.png")} />
           <p>Spiciest Posts of the Day!</p>
         </label>
         <div className="subContent">

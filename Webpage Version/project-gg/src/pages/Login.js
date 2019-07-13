@@ -19,7 +19,7 @@ class Login extends Component {
         </div>
         <div className="container">
           <img
-            src={require("../Assets/Controller.png")}
+            src={require("../assets/images/Controller.png")}
             className="controllerImage"
             style={styles.controllerImage}
           />
