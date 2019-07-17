@@ -362,17 +362,20 @@
 /* NEW POST INPUT */
 /*--------------------------------------------------------------------*/
 .post {
-  height: 150px;
+  padding: 20px;
+  background-color: "#332f31";
   /*   
     border-color: #a5a5a5;
     border-width: 2px;
     border-style: solid; */
 }
+.postSelected {
+}
 .postInput {
-  margin-top: 19px;
   width: 95%;
   box-sizing: border-box;
   height: 85px;
+  z-index: 99;
 
   font-family: Bahnschrift;
   padding: 16px;
@@ -385,3 +388,29 @@
   border-color: #3d393b;
   outline: none;
 }
+.postTextarea {
+  width: 95%;
+  box-sizing: border-box;
+  z-index: 1;
+
+  font-family: Bahnschrift;
+  padding: 16px;
+  padding-left: 24px;
+  font-size: 25px;
+  color: white;
+  background-color: #3d393b;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #3d393b;
+  outline: none;
+  resize: none;
+}
+/* #page-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+} */

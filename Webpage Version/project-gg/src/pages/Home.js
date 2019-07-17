@@ -15,7 +15,7 @@ class Home extends Component {
   }
   render() {
     return (
-      <div style={styles.homeContainer}>
+      <div style={styles.homeContainer} className="toggleShadow">
         <Navbar />
 
         <div style={styles.homeContet}>
